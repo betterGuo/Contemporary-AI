@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T11:10:34.832043+00:00",
+  "tolerance": 1e-10,
+  "environments": {
+    "primary": "project1",
+    "reproduction": "project1_reproduce"
+  },
+  "hashes": {
+    "code": {
+      "run_experiment.py": "066c310e648788d5b001a4144e3f9ddf3bb7f1868a39f5cf6c03af04fdce791c",
+      "explore_data.py": "b3a51b6c4bb0b99f55a229a35ba33e26448e2c5efb862c56cdabe71d13b0c898"
+    },
+    "data": {
+      "train_data.csv": "484667d165458da7f73ba36d172d67e14864e1aa5ab1ee6262e2966dd295c863",
+      "test_data_unlabeled.csv": "4882c04b008c055f351f1c9b25c45d601a454077af37e79375601f2465b41615"
+    },
+    "conda_locks": {
+      "conda-osx-arm64.lock.txt": "5f6588e454190668db73f8da212bcdc9d4955226f08acea51748b751b47e72bb",
+      "environment.lock.yml": "b147d568cd5bd057f8f0796e343ebbcc5e9e0f9e9196d16f04da14fdce81dd9d",
+      "environment.yml": "95ec37d9d309596dcace562ba38b59b8215f3af58645e132f5b992c0efe29e34",
+      "requirements-lock.txt": "bbba79bafa642d339996afeca37771657fd4efae28d96d9adaabd0ad2fd1820e"
+    },
+    "recorded_run_experiment_sha256": "066c310e648788d5b001a4144e3f9ddf3bb7f1868a39f5cf6c03af04fdce791c",
+    "lock_manifest_match": true,
+    "input_manifest_match": true
+  },
+  "full_runs": {
+    "candidate_count": 60,
+    "statuses": [
+      "completed",
+      "completed"
+    ],
+    "best_candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+    "metric_columns": [
+      "accuracy",
+      "macro_f1",
+      "weighted_f1",
+      "class_f1 per class"
+    ],
+    "metric_values_compared": 780,
+    "max_absolute_metric_difference": 0.0,
+    "validation_metrics_match_within_tolerance": true,
+    "package_versions_match": true
+  },
+  "validation": {
+    "split_rows": 7368,
+    "split_indices_row_by_row_identical": true,
+    "prediction_rows": 1474,
+    "best_model_predictions_row_by_row_identical": true
+  },
+  "final_predictions": {
+    "bytes": 4914,
+    "rows": 2457,
+    "primary_sha256": "308c2a229abb6aa9edd40ae91f59fcd30ecf591f8a69dcf155f2f91b4833da1c",
+    "reproduction_sha256": "308c2a229abb6aa9edd40ae91f59fcd30ecf591f8a69dcf155f2f91b4833da1c",
+    "byte_identical": true
+  },
+  "stability": {
+    "seeds": [
+      13,
+      42,
+      73,
+      101,
+      137
+    ],
+    "metric_values_compared": 15,
+    "max_absolute_metric_difference": 0.0,
+    "stability_summary_max_absolute_difference": 0.0,
+    "metrics_match_within_tolerance": true,
+    "split_indices_row_by_row_identical": true,
+    "ignored_timing_columns": [
+      "estimator_fit_seconds",
+      "prediction_seconds",
+      "total_seconds",
+      "validation_transform_seconds",
+      "vectorizer_fit_seconds"
+    ]
+  },
+  "issues": []
+}

@@ -1,0 +1,13 @@
+{
+  "generated": [
+    "validation_model_comparison.png",
+    "validation_tuning_curves.png",
+    "validation_macro_f1.png",
+    "single_factor_C.png",
+    "single_factor_alpha.png",
+    "feature_comparison.png",
+    "confusion_matrix_best.png"
+  ],
+  "failed": {},
+  "skipped": []
+}

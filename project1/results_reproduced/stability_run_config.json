@@ -1,0 +1,382 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-10-05T11:02:57.477290+00:00",
+  "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+  "candidate": {
+    "model": "linear_svm",
+    "vectorizer": "tfidf",
+    "max_features": 20000,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "alpha": null,
+    "C": 1.0
+  },
+  "selected_on_seed": 42,
+  "seeds": [
+    13,
+    42,
+    73,
+    101,
+    137
+  ],
+  "split": {
+    "test_size": 0.2,
+    "stratified": true
+  },
+  "best_config_sha256": "d13186c062d42e49aeafe3385d5f9394d604445b36d3687f9e443d2fdd6e0ad1",
+  "input_sha256": {
+    "train_data.csv": "484667d165458da7f73ba36d172d67e14864e1aa5ab1ee6262e2966dd295c863",
+    "test_data_unlabeled.csv": "4882c04b008c055f351f1c9b25c45d601a454077af37e79375601f2465b41615"
+  },
+  "script_sha256": "066c310e648788d5b001a4144e3f9ddf3bb7f1868a39f5cf6c03af04fdce791c",
+  "package_versions": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.2",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "runtime_environment": {
+    "python_executable": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/bin/python",
+    "python_version": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "system": "Darwin",
+    "release": "25.4.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 8,
+    "working_directory": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1",
+    "conda_environment": "project1_reproduce",
+    "conda_prefix": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce",
+    "thread_environment_variables": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": null
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libopenblas",
+        "filepath": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/lib/libopenblas.0.dylib",
+        "version": "0.3.34",
+        "threading_layer": "openmp",
+        "architecture": "VORTEX"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "filepath": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/lib/libomp.dylib",
+        "version": null
+      }
+    ],
+    "command_argv": [
+      "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/bin/python",
+      "run_experiment.py",
+      "--stability-only",
+      "--data-dir",
+      ".",
+      "--output-dir",
+      "results_reproduced"
+    ],
+    "command_line": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/bin/python run_experiment.py --stability-only --data-dir . --output-dir results_reproduced",
+    "script_path": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/run_experiment.py",
+    "script_sha256": "066c310e648788d5b001a4144e3f9ddf3bb7f1868a39f5cf6c03af04fdce791c"
+  },
+  "effective_configurations": [
+    {
+      "candidate": {
+        "model": "linear_svm",
+        "vectorizer": "tfidf",
+        "max_features": 20000,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "min_df": 1,
+        "sublinear_tf": true,
+        "alpha": null,
+        "C": 1.0
+      },
+      "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+      "vectorizer_parameters": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "numpy.float64",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": true,
+        "max_df": 1.0,
+        "max_features": 20000,
+        "min_df": 1,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": "unicode",
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      },
+      "estimator_parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": "auto",
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "loss": "squared_hinge",
+        "max_iter": 5000,
+        "multi_class": "ovr",
+        "penalty": "l2",
+        "random_state": 13,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    {
+      "candidate": {
+        "model": "linear_svm",
+        "vectorizer": "tfidf",
+        "max_features": 20000,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "min_df": 1,
+        "sublinear_tf": true,
+        "alpha": null,
+        "C": 1.0
+      },
+      "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+      "vectorizer_parameters": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "numpy.float64",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": true,
+        "max_df": 1.0,
+        "max_features": 20000,
+        "min_df": 1,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": "unicode",
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      },
+      "estimator_parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": "auto",
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "loss": "squared_hinge",
+        "max_iter": 5000,
+        "multi_class": "ovr",
+        "penalty": "l2",
+        "random_state": 42,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    {
+      "candidate": {
+        "model": "linear_svm",
+        "vectorizer": "tfidf",
+        "max_features": 20000,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "min_df": 1,
+        "sublinear_tf": true,
+        "alpha": null,
+        "C": 1.0
+      },
+      "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+      "vectorizer_parameters": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "numpy.float64",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": true,
+        "max_df": 1.0,
+        "max_features": 20000,
+        "min_df": 1,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": "unicode",
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      },
+      "estimator_parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": "auto",
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "loss": "squared_hinge",
+        "max_iter": 5000,
+        "multi_class": "ovr",
+        "penalty": "l2",
+        "random_state": 73,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    {
+      "candidate": {
+        "model": "linear_svm",
+        "vectorizer": "tfidf",
+        "max_features": 20000,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "min_df": 1,
+        "sublinear_tf": true,
+        "alpha": null,
+        "C": 1.0
+      },
+      "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+      "vectorizer_parameters": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "numpy.float64",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": true,
+        "max_df": 1.0,
+        "max_features": 20000,
+        "min_df": 1,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": "unicode",
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      },
+      "estimator_parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": "auto",
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "loss": "squared_hinge",
+        "max_iter": 5000,
+        "multi_class": "ovr",
+        "penalty": "l2",
+        "random_state": 101,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    {
+      "candidate": {
+        "model": "linear_svm",
+        "vectorizer": "tfidf",
+        "max_features": 20000,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "min_df": 1,
+        "sublinear_tf": true,
+        "alpha": null,
+        "C": 1.0
+      },
+      "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+      "vectorizer_parameters": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "numpy.float64",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": true,
+        "max_df": 1.0,
+        "max_features": 20000,
+        "min_df": 1,
+        "ngram_range": [
+          1,
+          1
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": "unicode",
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      },
+      "estimator_parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": "auto",
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "loss": "squared_hinge",
+        "max_iter": 5000,
+        "multi_class": "ovr",
+        "penalty": "l2",
+        "random_state": 137,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    }
+  ],
+  "run_log": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_reproduced/stability.log",
+  "completed_at_utc": "2026-10-05T11:03:01.503213+00:00"
+}

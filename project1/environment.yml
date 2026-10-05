@@ -1,0 +1,13 @@
+name: project1
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - numpy=2.2.6
+  - pandas=2.2.3
+  - scipy=1.15.2
+  - scikit-learn=1.7.2
+  - matplotlib=3.10.8
+  - threadpoolctl=3.6.0
+  - pip

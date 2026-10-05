@@ -1,0 +1,72 @@
+Training rows=7368; test content unopened; output=/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_optimized
+Frozen code SHA=9e1c847f5ea31ad22d281ba0f6800a4e522b7047c71ee8e8afa6f50572f7ea78; plan SHA=55ac8135ae4a2ce353a4c3cdd84767cc07211cff76509fc98dab1c2c95f49690
+[stage1] A_max_features: word_mf20k_md1_C1 seed=42
+  train Macro-F1=0.999660; validation Macro-F1=0.940341, accuracy=0.940299; fit=0.197s warnings=0
+[stage1] A_max_features: word_mf40k_md1_C1 seed=42
+  train Macro-F1=0.999831; validation Macro-F1=0.942305, accuracy=0.942334; fit=0.389s warnings=0
+[stage1] A_max_features: word_mf80k_md1_C1 seed=42
+  train Macro-F1=0.999831; validation Macro-F1=0.945625, accuracy=0.945726; fit=0.489s warnings=0
+[stage1] A_max_features: word_mfall_md1_C1 seed=42
+  train Macro-F1=0.999831; validation Macro-F1=0.944995, accuracy=0.945047; fit=0.334s warnings=0
+[stage1] B_min_df: word_mf80k_md2_C1 seed=42
+  train Macro-F1=0.999831; validation Macro-F1=0.943059, accuracy=0.943012; fit=0.386s warnings=0
+[stage1] B_min_df: word_mf80k_md3_C1 seed=42
+  train Macro-F1=0.999831; validation Macro-F1=0.941009, accuracy=0.940977; fit=0.219s warnings=0
+[stage1] C_svm_C: word_mf80k_md1_C0p5 seed=42
+  train Macro-F1=0.999152; validation Macro-F1=0.945784, accuracy=0.945726; fit=0.210s warnings=0
+[stage1] C_svm_C: word_mf80k_md1_C2 seed=42
+  train Macro-F1=0.999831; validation Macro-F1=0.944335, accuracy=0.944369; fit=0.345s warnings=0
+Stage 1 winners A=word_mf80k_md1_C1, B=word_mf80k_md1_C1, C=word_mf80k_md1_C0p5; locked word=word_mf80k_md1_C0p5
+[stage2] char_only: char_only seed=42
+  train Macro-F1=0.998645; validation Macro-F1=0.935915, accuracy=0.935550; fit=2.028s warnings=0
+[stage2] fusion_w1_c025: fusion_w1_c025 seed=42
+  train Macro-F1=0.999152; validation Macro-F1=0.945772, accuracy=0.945726; fit=2.449s warnings=0
+[stage2] fusion_w1_c05: fusion_w1_c05 seed=42
+  train Macro-F1=0.998983; validation Macro-F1=0.947878, accuracy=0.947761; fit=2.375s warnings=0
+[stage2] fusion_w1_c1: fusion_w1_c1 seed=42
+  train Macro-F1=0.998814; validation Macro-F1=0.948619, accuracy=0.948440; fit=2.298s warnings=0
+[stage2] fusion_w05_c1: fusion_w05_c1 seed=42
+  train Macro-F1=0.998814; validation Macro-F1=0.941154, accuracy=0.940977; fit=2.255s warnings=0
+Stage 2 best fusion=fusion_w1_c1; locked seed-42 overall winner=fusion_w1_c1
+[stage3] baseline: word_mf20k_md1_C1 seed=17
+  train Macro-F1=0.999491; validation Macro-F1=0.943665, accuracy=0.943691; fit=0.213s warnings=0
+[stage3] best_word: word_mf80k_md1_C0p5 seed=17
+  train Macro-F1=0.998983; validation Macro-F1=0.951214, accuracy=0.951153; fit=0.204s warnings=0
+[stage3] char_only: char_only seed=17
+  train Macro-F1=0.998475; validation Macro-F1=0.951887, accuracy=0.951832; fit=1.997s warnings=0
+[stage3] best_fusion: fusion_w1_c1 seed=17
+  train Macro-F1=0.998814; validation Macro-F1=0.955229, accuracy=0.955224; fit=2.348s warnings=0
+[stage3] baseline: word_mf20k_md1_C1 seed=29
+  train Macro-F1=0.999492; validation Macro-F1=0.937289, accuracy=0.936906; fit=0.209s warnings=0
+[stage3] best_word: word_mf80k_md1_C0p5 seed=29
+  train Macro-F1=0.999153; validation Macro-F1=0.943347, accuracy=0.943012; fit=0.211s warnings=0
+[stage3] char_only: char_only seed=29
+  train Macro-F1=0.998307; validation Macro-F1=0.931333, accuracy=0.930801; fit=2.035s warnings=0
+[stage3] best_fusion: fusion_w1_c1 seed=29
+  train Macro-F1=0.998984; validation Macro-F1=0.946803, accuracy=0.946404; fit=2.399s warnings=0
+[stage3] baseline: word_mf20k_md1_C1 seed=53
+  train Macro-F1=0.999660; validation Macro-F1=0.938788, accuracy=0.938942; fit=0.205s warnings=0
+[stage3] best_word: word_mf80k_md1_C0p5 seed=53
+  train Macro-F1=0.999490; validation Macro-F1=0.943731, accuracy=0.943691; fit=0.205s warnings=0
+[stage3] char_only: char_only seed=53
+  train Macro-F1=0.998644; validation Macro-F1=0.940992, accuracy=0.940977; fit=2.009s warnings=0
+[stage3] best_fusion: fusion_w1_c1 seed=53
+  train Macro-F1=0.999321; validation Macro-F1=0.947694, accuracy=0.947761; fit=2.329s warnings=0
+[stage3] baseline: word_mf20k_md1_C1 seed=89
+  train Macro-F1=0.999492; validation Macro-F1=0.932397, accuracy=0.932157; fit=0.208s warnings=0
+[stage3] best_word: word_mf80k_md1_C0p5 seed=89
+  train Macro-F1=0.999154; validation Macro-F1=0.933617, accuracy=0.933514; fit=0.199s warnings=0
+[stage3] char_only: char_only seed=89
+  train Macro-F1=0.998645; validation Macro-F1=0.933172, accuracy=0.932836; fit=2.031s warnings=0
+[stage3] best_fusion: fusion_w1_c1 seed=89
+  train Macro-F1=0.999154; validation Macro-F1=0.941330, accuracy=0.940977; fit=2.577s warnings=0
+[stage3] baseline: word_mf20k_md1_C1 seed=149
+  train Macro-F1=0.999322; validation Macro-F1=0.946060, accuracy=0.945726; fit=0.219s warnings=0
+[stage3] best_word: word_mf80k_md1_C0p5 seed=149
+  train Macro-F1=0.998982; validation Macro-F1=0.948054, accuracy=0.947761; fit=0.248s warnings=0
+[stage3] char_only: char_only seed=149
+  train Macro-F1=0.999152; validation Macro-F1=0.938583, accuracy=0.938263; fit=2.030s warnings=0
+[stage3] best_fusion: fusion_w1_c1 seed=149
+  train Macro-F1=0.999152; validation Macro-F1=0.948755, accuracy=0.948440; fit=2.365s warnings=0
+Completed. Locked winner=fusion_w1_c1; submission=/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_optimized/predictions.csv; SHA256=c999f912eded693b0a6c78806a7edee1b60680db3f517602f46d5733cf7a42f9
+Root predictions.csv and frozen baseline artifacts were not modified.

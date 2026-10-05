@@ -1,0 +1,235 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-10-05T12:07:45.758823+00:00",
+  "data_dir": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1",
+  "output_dir": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_optimized",
+  "run_log": "run.log",
+  "optimization_plan": "optimization_plan.json",
+  "package_versions": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.2",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "installed_distributions": {
+    "cloudpickle": "3.1.2",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "joblib": "1.6.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.10.8",
+    "munkres": "1.1.4",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pandas": "2.2.3",
+    "pillow": "12.3.0",
+    "pip": "26.2.1",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.3.post1",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.2",
+    "setuptools": "84.0.0",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "tornado": "6.5.8",
+    "tzdata": "2026.3",
+    "unicodedata2": "17.0.1",
+    "wheel": "0.48.0"
+  },
+  "runtime_environment": {
+    "python_executable": "/Users/guoyuhang/.local/miniconda3/envs/project1/bin/python",
+    "python_version": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "system": "Darwin",
+    "release": "25.4.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 8,
+    "working_directory": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1",
+    "conda_environment": "project1",
+    "conda_prefix": "/Users/guoyuhang/.local/miniconda3/envs/project1",
+    "thread_environment_variables": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": null
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libopenblas",
+        "filepath": "/Users/guoyuhang/.local/miniconda3/envs/project1/lib/libopenblas.0.dylib",
+        "version": "0.3.34",
+        "threading_layer": "openmp",
+        "architecture": "VORTEX"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "filepath": "/Users/guoyuhang/.local/miniconda3/envs/project1/lib/libomp.dylib",
+        "version": null
+      }
+    ],
+    "command_argv": [
+      "/Users/guoyuhang/.local/miniconda3/envs/project1/bin/python",
+      "optimize_experiment.py",
+      "--data-dir",
+      ".",
+      "--output-dir",
+      "results_optimized"
+    ],
+    "command_line": "/Users/guoyuhang/.local/miniconda3/envs/project1/bin/python optimize_experiment.py --data-dir . --output-dir results_optimized",
+    "script_path": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/optimize_experiment.py",
+    "script_sha256": "9e1c847f5ea31ad22d281ba0f6800a4e522b7047c71ee8e8afa6f50572f7ea78",
+    "frozen_baseline_script_path": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/run_experiment.py",
+    "frozen_baseline_script_sha256": "066c310e648788d5b001a4144e3f9ddf3bb7f1868a39f5cf6c03af04fdce791c",
+    "optimization_plan_path": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/optimization_plan.json",
+    "optimization_plan_sha256": "55ac8135ae4a2ce353a4c3cdd84767cc07211cff76509fc98dab1c2c95f49690"
+  },
+  "input_sha256": {
+    "train_data.csv": "484667d165458da7f73ba36d172d67e14864e1aa5ab1ee6262e2966dd295c863",
+    "test_data_unlabeled.csv": "4882c04b008c055f351f1c9b25c45d601a454077af37e79375601f2465b41615"
+  },
+  "dependency_lock_sha256": {
+    "conda-osx-arm64.lock.txt": "5f6588e454190668db73f8da212bcdc9d4955226f08acea51748b751b47e72bb",
+    "environment.lock.yml": "b147d568cd5bd057f8f0796e343ebbcc5e9e0f9e9196d16f04da14fdce81dd9d",
+    "environment.yml": "95ec37d9d309596dcace562ba38b59b8215f3af58645e132f5b992c0efe29e34",
+    "requirements-lock.txt": "bbba79bafa642d339996afeca37771657fd4efae28d96d9adaabd0ad2fd1820e"
+  },
+  "test_text_content_opened": true,
+  "frozen_files": {
+    "run_experiment.py": "066c310e648788d5b001a4144e3f9ddf3bb7f1868a39f5cf6c03af04fdce791c",
+    "reproduction_check.py": "33ad878b6750d879217dd661788f1e35aab445bc7c9d105b30d17b041edb30db"
+  },
+  "training_data_summary": {
+    "rows": 7368,
+    "class_counts": {
+      "0": 730,
+      "1": 739,
+      "2": 737,
+      "3": 742,
+      "4": 747,
+      "5": 745,
+      "6": 743,
+      "7": 738,
+      "8": 742,
+      "9": 705
+    },
+    "text_chars_min": 125,
+    "text_chars_median": 1139.0,
+    "text_chars_max": 160616
+  },
+  "split_policy": {
+    "stratified": true,
+    "validation_size": 0.2,
+    "phase12_seed": 42,
+    "phase3_seeds": [
+      17,
+      29,
+      53,
+      89,
+      149
+    ],
+    "validation_is_used_for_selection": true
+  },
+  "selection_locked_before_stage3": {
+    "stage1": {
+      "A_best": "word_mf80k_md1_C1",
+      "B_best": "word_mf80k_md1_C1",
+      "C_best": "word_mf80k_md1_C0p5",
+      "phase1_winner_candidates_in_order": [
+        "word_mf80k_md1_C1",
+        "word_mf80k_md1_C0p5"
+      ],
+      "best_word": "word_mf80k_md1_C0p5"
+    },
+    "stage1_unique_candidate_ids_in_order": [
+      "word_mf20k_md1_C1",
+      "word_mf40k_md1_C1",
+      "word_mf80k_md1_C1",
+      "word_mfall_md1_C1",
+      "word_mf80k_md2_C1",
+      "word_mf80k_md3_C1",
+      "word_mf80k_md1_C0p5",
+      "word_mf80k_md1_C2"
+    ],
+    "stage2_best_fusion": "fusion_w1_c1",
+    "seed42_overall_candidates_in_order": [
+      "word_mf20k_md1_C1",
+      "word_mf40k_md1_C1",
+      "word_mf80k_md1_C1",
+      "word_mfall_md1_C1",
+      "word_mf80k_md2_C1",
+      "word_mf80k_md3_C1",
+      "word_mf80k_md1_C0p5",
+      "word_mf80k_md1_C2",
+      "char_only",
+      "fusion_w1_c025",
+      "fusion_w1_c05",
+      "fusion_w1_c1",
+      "fusion_w05_c1"
+    ],
+    "final_winner_locked_before_stage3": "fusion_w1_c1",
+    "final_winner_spec": {
+      "candidate_id": "fusion_w1_c1",
+      "name": "fusion_w1_c1",
+      "representation": "fusion",
+      "word": {
+        "max_features": 80000,
+        "min_df": 1,
+        "ngram_range": [
+          1,
+          1
+        ]
+      },
+      "C": 0.5,
+      "word_weight": 1.0,
+      "char_weight": 1.0
+    },
+    "selection_metric": "macro_f1",
+    "tie_break": "highest Macro-F1; exact ties keep the first candidate in the fixed order below"
+  },
+  "test_text_content_opened_at_utc": "2026-10-05T12:09:34.865154+00:00",
+  "completed_at_utc": "2026-10-05T12:09:51.462960+00:00",
+  "candidate_evaluation_records_including_aliases": 37,
+  "unique_estimator_fit_attempts": 33,
+  "stage1_unique_candidates": 8,
+  "stage2_new_candidates": 5,
+  "planned_stage3_arm_evaluations": 20,
+  "final_winner_locked_before_stage3": "fusion_w1_c1",
+  "final_submission": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_optimized/predictions.csv",
+  "final_submission_sha256": "c999f912eded693b0a6c78806a7edee1b60680db3f517602f46d5733cf7a42f9",
+  "final_fit_warnings": [],
+  "plot_generation": {
+    "generated": [
+      "stage1_word_search.png",
+      "stage2_representation_ablation.png",
+      "stage3_paired_deltas.png",
+      "final_winner_confusion_matrix.png"
+    ],
+    "errors": []
+  },
+  "artifacts": [
+    "optimization_results.json",
+    "metrics.csv",
+    "validation_predictions.csv",
+    "split_indices.csv",
+    "paired_deltas.csv",
+    "paired_summary.json",
+    "error_analysis_seed42.json",
+    "predictions.csv",
+    "plot_generation.json",
+    "run.log"
+  ]
+}

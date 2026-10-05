@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "purpose": "Budgeted word-feature screening followed by a fixed char_wb ablation and paired split-sensitivity check; no test-set inspection before the final locked fit.",
+  "phase12_seed": 42,
+  "validation_size": 0.2,
+  "selection_metric": "macro_f1",
+  "tie_break": "highest Macro-F1; exact ties keep the first candidate in the fixed order below",
+  "stage1": {
+    "maximum_total_fits": 8,
+    "estimator": "sklearn.svm.LinearSVC",
+    "estimator_parameters": {
+      "loss": "squared_hinge",
+      "penalty": "l2",
+      "dual": "auto",
+      "max_iter": 5000,
+      "random_state": 42
+    },
+    "vectorizer": "word_tfidf",
+    "fixed_vectorizer_parameters": {
+      "ngram_range": [1, 1],
+      "sublinear_tf": true,
+      "lowercase": true,
+      "strip_accents": "unicode",
+      "dtype": "float64",
+      "norm": "l2"
+    },
+    "steps": [
+      {
+        "name": "A_max_features",
+        "max_features_in_order": [20000, 40000, 80000, null],
+        "min_df": 1,
+        "C": 1.0
+      },
+      {
+        "name": "B_min_df",
+        "max_features": "A_best.max_features",
+        "min_df_in_order": [1, 2, 3],
+        "C": 1.0
+      },
+      {
+        "name": "C_svm_C",
+        "max_features": "B_best.max_features",
+        "min_df": "B_best.min_df",
+        "C_in_order": [1.0, 0.5, 2.0]
+      }
+    ],
+    "deduplicate_identical_configurations": true,
+    "maximum_unique_candidates": 8,
+    "word_best_rule": "Choose the best among the A, B, and C step winners in A-to-C order, after deduplication; exact ties keep the earlier winner."
+  },
+  "stage2": {
+    "maximum_new_fits_beyond_stage1": 5,
+    "fixed_word_candidate": "stage1.word_best",
+    "fixed_C": "stage1.word_best.C",
+    "char_vectorizer": {
+      "analyzer": "char_wb",
+      "ngram_range": [3, 5],
+      "max_features": 80000,
+      "min_df": 2,
+      "sublinear_tf": true,
+      "lowercase": true,
+      "strip_accents": "unicode",
+      "dtype": "float64",
+      "norm": "l2"
+    },
+    "arms_in_order": [
+      {"name": "word_only", "word_weight": 1.0, "char_weight": 0.0},
+      {"name": "char_only", "word_weight": 0.0, "char_weight": 1.0},
+      {"name": "fusion_w1_c025", "word_weight": 1.0, "char_weight": 0.25},
+      {"name": "fusion_w1_c05", "word_weight": 1.0, "char_weight": 0.5},
+      {"name": "fusion_w1_c1", "word_weight": 1.0, "char_weight": 1.0},
+      {"name": "fusion_w05_c1", "word_weight": 0.5, "char_weight": 1.0}
+    ],
+    "normalization": "Each TfidfVectorizer branch uses L2 normalization. For fusion, scale each branch by its fixed weight, hstack CSR matrices, then L2-normalize the combined rows. Single-branch matrices skip redundant post-normalization so word_only reproduces the original word matrix exactly.",
+    "best_fusion_rule": "Highest seed-42 validation Macro-F1 among the four fusion arms; exact ties keep the fixed arm order.",
+    "seed42_overall_rule": "Compare all unique stage-1 candidates, the frozen baseline, and all stage-2 arms in first-appearance order; exact Macro-F1 ties keep the earliest candidate.",
+    "final_winner_locked_before_stage3": true
+  },
+  "baseline": {
+    "name": "baseline",
+    "max_features": 20000,
+    "min_df": 1,
+    "ngram_range": [1, 1],
+    "C": 1.0,
+    "source": "frozen results/best_config.json"
+  },
+  "stage3": {
+    "planned_fits": 20,
+    "seeds_in_order": [17, 29, 53, 89, 149],
+    "validation_size": 0.2,
+    "stratified": true,
+    "matched_splits": true,
+    "arms_in_order": ["baseline", "best_word", "char_only", "best_fusion"],
+    "selection_after_stage3": false,
+    "paired_delta_reference": "baseline",
+    "summary": "Compute per-seed arm-minus-baseline deltas first, then report their mean and sample standard deviation. No confidence intervals, significance tests, or independence claims; the folds overlap and reuse previously observed labeled rows."
+  },
+  "final_fit": {
+    "candidate": "stage2.final_winner_locked_before_stage3",
+    "fit_on_all_labeled_rows": true,
+    "read_test_texts_only_after_candidate_lock": true,
+    "submission_path": "results_optimized/predictions.csv",
+    "do_not_overwrite_root_predictions_csv": true
+  },
+  "measurements": {
+    "record": [
+      "effective_vectorizer_and_estimator_get_params",
+      "input_and_lock_sha256",
+      "script_sha256_and_run_manifest",
+      "warnings_and_failures",
+      "vectorizer_fit_and_transform_time",
+      "estimator_fit_and_train_validation_predict_time",
+      "train_and_validation_accuracy_macro_f1_weighted_f1_per_class_precision_recall_support_confusion_matrix",
+      "full_validation_prediction_rows_and_split_indices",
+      "train_and_validation_csr_shapes_nnz_and_storage_nbytes",
+      "linear_svc_coef_intercept_storage_nbytes_and_parameter_count",
+      "text_length_quartile_and_label_2_7_error_comparison_for_seed42_baseline_vs_final_winner",
+      "corrected_and_new_error_counts_with_examples"
+    ],
+    "csr_memory_definition": "data.nbytes + indices.nbytes + indptr.nbytes for each CSR matrix; this is sparse feature-matrix storage, not process RSS.",
+    "training_metrics_interpretation": "Training scores are resubstitution diagnostics only, not generalization estimates."
+  },
+  "constraints": [
+    "Do not modify run_experiment.py, reproduction_check.py, results/, results_reproduced/, or root predictions.csv.",
+    "Do not use test texts or labels to design features, choose settings, or compare candidates.",
+    "Do not add model families, dependencies, data cleaning, or unplanned search dimensions."
+  ]
+}

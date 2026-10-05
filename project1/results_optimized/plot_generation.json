@@ -1,0 +1,9 @@
+{
+  "generated": [
+    "stage1_word_search.png",
+    "stage2_representation_ablation.png",
+    "stage3_paired_deltas.png",
+    "final_winner_confusion_matrix.png"
+  ],
+  "errors": []
+}

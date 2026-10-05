@@ -1,0 +1,85 @@
+{
+  "vectorizer_fit_seconds": 0.5878160420106724,
+  "test_transform_seconds": 0.17765891703311354,
+  "estimator_fit_seconds": 0.25124716688878834,
+  "prediction_seconds": 0.0014222499448806047,
+  "total_seconds": 1.018173542106524,
+  "num_features": 20000,
+  "num_train_rows": 7368,
+  "num_test_rows": 2457,
+  "warnings": [],
+  "vectorizer_parameters": {
+    "analyzer": "word",
+    "binary": false,
+    "decode_error": "strict",
+    "dtype": "numpy.float64",
+    "encoding": "utf-8",
+    "input": "content",
+    "lowercase": true,
+    "max_df": 1.0,
+    "max_features": 20000,
+    "min_df": 1,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "norm": "l2",
+    "preprocessor": null,
+    "smooth_idf": true,
+    "stop_words": null,
+    "strip_accents": "unicode",
+    "sublinear_tf": true,
+    "token_pattern": "(?u)\\b\\w\\w+\\b",
+    "tokenizer": null,
+    "use_idf": true,
+    "vocabulary": null
+  },
+  "estimator_parameters": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": "auto",
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "loss": "squared_hinge",
+    "max_iter": 5000,
+    "multi_class": "ovr",
+    "penalty": "l2",
+    "random_state": 42,
+    "tol": 0.0001,
+    "verbose": 0
+  },
+  "candidate": {
+    "model": "linear_svm",
+    "vectorizer": "tfidf",
+    "max_features": 20000,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "alpha": null,
+    "C": 1.0
+  },
+  "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+  "prediction_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "submission_path": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/predictions.csv",
+  "has_header": false,
+  "has_index": false,
+  "input_sha256": {
+    "train_data.csv": "484667d165458da7f73ba36d172d67e14864e1aa5ab1ee6262e2966dd295c863",
+    "test_data_unlabeled.csv": "4882c04b008c055f351f1c9b25c45d601a454077af37e79375601f2465b41615"
+  },
+  "timestamp_utc": "2026-10-05T11:00:16.418720+00:00"
+}

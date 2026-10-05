@@ -1,0 +1,9 @@
+{
+  "generated": [
+    "report_ablation.png",
+    "report_confusion_matrix.png"
+  ],
+  "winner": "fusion_w1_c1",
+  "validation_rows": 1474,
+  "note": "Figures are generated from saved validation artifacts; no model was fitted."
+}

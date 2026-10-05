@@ -1,0 +1,57 @@
+{
+  "stage1": {
+    "A_best": "word_mf80k_md1_C1",
+    "B_best": "word_mf80k_md1_C1",
+    "C_best": "word_mf80k_md1_C0p5",
+    "phase1_winner_candidates_in_order": [
+      "word_mf80k_md1_C1",
+      "word_mf80k_md1_C0p5"
+    ],
+    "best_word": "word_mf80k_md1_C0p5"
+  },
+  "stage1_unique_candidate_ids_in_order": [
+    "word_mf20k_md1_C1",
+    "word_mf40k_md1_C1",
+    "word_mf80k_md1_C1",
+    "word_mfall_md1_C1",
+    "word_mf80k_md2_C1",
+    "word_mf80k_md3_C1",
+    "word_mf80k_md1_C0p5",
+    "word_mf80k_md1_C2"
+  ],
+  "stage2_best_fusion": "fusion_w1_c1",
+  "seed42_overall_candidates_in_order": [
+    "word_mf20k_md1_C1",
+    "word_mf40k_md1_C1",
+    "word_mf80k_md1_C1",
+    "word_mfall_md1_C1",
+    "word_mf80k_md2_C1",
+    "word_mf80k_md3_C1",
+    "word_mf80k_md1_C0p5",
+    "word_mf80k_md1_C2",
+    "char_only",
+    "fusion_w1_c025",
+    "fusion_w1_c05",
+    "fusion_w1_c1",
+    "fusion_w05_c1"
+  ],
+  "final_winner_locked_before_stage3": "fusion_w1_c1",
+  "final_winner_spec": {
+    "candidate_id": "fusion_w1_c1",
+    "name": "fusion_w1_c1",
+    "representation": "fusion",
+    "word": {
+      "max_features": 80000,
+      "min_df": 1,
+      "ngram_range": [
+        1,
+        1
+      ]
+    },
+    "C": 0.5,
+    "word_weight": 1.0,
+    "char_weight": 1.0
+  },
+  "selection_metric": "macro_f1",
+  "tie_break": "highest Macro-F1; exact ties keep the first candidate in the fixed order below"
+}

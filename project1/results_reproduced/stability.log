@@ -1,0 +1,8 @@
+=== Locked-configuration split sensitivity assessment ===
+Seeds: [13, 42, 73, 101, 137]
+stability seed=13: accuracy=0.9444, macro_f1=0.9445
+stability seed=42: accuracy=0.9403, macro_f1=0.9403
+stability seed=73: accuracy=0.9464, macro_f1=0.9466
+stability seed=101: accuracy=0.9342, macro_f1=0.9344
+stability seed=137: accuracy=0.9450, macro_f1=0.9450
+Wrote stability_results.csv and stability_summary.json in /Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_reproduced

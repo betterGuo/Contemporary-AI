@@ -1,0 +1,99 @@
+{
+  "candidate": {
+    "model": "linear_svm",
+    "vectorizer": "tfidf",
+    "max_features": 20000,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "alpha": null,
+    "C": 1.0
+  },
+  "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+  "selection_metric": "macro_f1",
+  "metrics": {
+    "model": "linear_svm",
+    "vectorizer": "tfidf",
+    "max_features": 20000,
+    "ngram_range": "(1, 1)",
+    "min_df": 1,
+    "sublinear_tf": true,
+    "alpha": null,
+    "C": 1.0,
+    "candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+    "num_features": 20000,
+    "train_rows": 5894,
+    "validation_rows": 1474,
+    "accuracy": 0.9402985074626866,
+    "macro_f1": 0.9403410595794117,
+    "weighted_f1": 0.9402837547181222,
+    "vectorizer_fit_seconds": 0.47463487507775426,
+    "validation_transform_seconds": 0.10644612496253103,
+    "estimator_fit_seconds": 0.2049568329239264,
+    "prediction_seconds": 0.0009685420664027333,
+    "total_seconds": 0.7870229170657694,
+    "convergence_warning": false,
+    "warnings": [],
+    "vectorizer_parameters": {
+      "analyzer": "word",
+      "binary": false,
+      "decode_error": "strict",
+      "dtype": "numpy.float64",
+      "encoding": "utf-8",
+      "input": "content",
+      "lowercase": true,
+      "max_df": 1.0,
+      "max_features": 20000,
+      "min_df": 1,
+      "ngram_range": [
+        1,
+        1
+      ],
+      "norm": "l2",
+      "preprocessor": null,
+      "smooth_idf": true,
+      "stop_words": null,
+      "strip_accents": "unicode",
+      "sublinear_tf": true,
+      "token_pattern": "(?u)\\b\\w\\w+\\b",
+      "tokenizer": null,
+      "use_idf": true,
+      "vocabulary": null
+    },
+    "estimator_parameters": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": "auto",
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "loss": "squared_hinge",
+      "max_iter": 5000,
+      "multi_class": "ovr",
+      "penalty": "l2",
+      "random_state": 42,
+      "tol": 0.0001,
+      "verbose": 0
+    },
+    "class_f1": {
+      "0": 0.9090909090909091,
+      "1": 0.9364548494983278,
+      "2": 0.8648648648648649,
+      "3": 0.9562289562289562,
+      "4": 0.9764309764309764,
+      "5": 0.9801324503311258,
+      "6": 0.9488054607508533,
+      "7": 0.8758620689655172,
+      "8": 0.9662162162162162,
+      "9": 0.9893238434163701
+    },
+    "status": "ok"
+  },
+  "input_sha256": {
+    "train_data.csv": "484667d165458da7f73ba36d172d67e14864e1aa5ab1ee6262e2966dd295c863",
+    "test_data_unlabeled.csv": "4882c04b008c055f351f1c9b25c45d601a454077af37e79375601f2465b41615"
+  },
+  "selected_on_seed": 42
+}

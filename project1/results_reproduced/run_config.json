@@ -1,0 +1,136 @@
+{
+  "started_at_utc": "2026-10-05T11:01:03.168307+00:00",
+  "status": "completed",
+  "random_state": 42,
+  "default_seed": 42,
+  "validation_size": 0.2,
+  "stratified_split": true,
+  "selection_metric": "macro_f1",
+  "selection_tie_break": "first candidate in fixed grid order",
+  "validation_split_is_used_for_model_selection": true,
+  "data_dir": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1",
+  "output_dir": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_reproduced",
+  "submission_path": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_reproduced/predictions.csv",
+  "quick_grid": false,
+  "candidate_count": 60,
+  "candidate_configurations_file": "candidate_configurations.json",
+  "input_sha256": {
+    "train_data.csv": "484667d165458da7f73ba36d172d67e14864e1aa5ab1ee6262e2966dd295c863",
+    "test_data_unlabeled.csv": "4882c04b008c055f351f1c9b25c45d601a454077af37e79375601f2465b41615"
+  },
+  "dependency_lock_sha256": {
+    "conda-osx-arm64.lock.txt": "5f6588e454190668db73f8da212bcdc9d4955226f08acea51748b751b47e72bb",
+    "environment.lock.yml": "b147d568cd5bd057f8f0796e343ebbcc5e9e0f9e9196d16f04da14fdce81dd9d",
+    "environment.yml": "95ec37d9d309596dcace562ba38b59b8215f3af58645e132f5b992c0efe29e34",
+    "requirements-lock.txt": "bbba79bafa642d339996afeca37771657fd4efae28d96d9adaabd0ad2fd1820e"
+  },
+  "package_versions": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.2",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "installed_distributions": {
+    "cloudpickle": "3.1.2",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "joblib": "1.6.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.10.8",
+    "munkres": "1.1.4",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pandas": "2.2.3",
+    "pillow": "12.3.0",
+    "pip": "26.2.1",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.3.post1",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.2",
+    "setuptools": "84.0.0",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "tornado": "6.5.8",
+    "tzdata": "2026.3",
+    "unicodedata2": "17.0.1",
+    "wheel": "0.48.0"
+  },
+  "runtime_environment": {
+    "python_executable": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/bin/python",
+    "python_version": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "system": "Darwin",
+    "release": "25.4.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 8,
+    "working_directory": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1",
+    "conda_environment": "project1_reproduce",
+    "conda_prefix": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce",
+    "thread_environment_variables": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": null
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libopenblas",
+        "filepath": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/lib/libopenblas.0.dylib",
+        "version": "0.3.34",
+        "threading_layer": "openmp",
+        "architecture": "VORTEX"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "filepath": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/lib/libomp.dylib",
+        "version": null
+      }
+    ],
+    "command_argv": [
+      "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/bin/python",
+      "run_experiment.py",
+      "--data-dir",
+      ".",
+      "--output-dir",
+      "results_reproduced",
+      "--submission-path",
+      "results_reproduced/predictions.csv"
+    ],
+    "command_line": "/Users/guoyuhang/.local/miniconda3/envs/project1_reproduce/bin/python run_experiment.py --data-dir . --output-dir results_reproduced --submission-path results_reproduced/predictions.csv",
+    "script_path": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/run_experiment.py",
+    "script_sha256": "066c310e648788d5b001a4144e3f9ddf3bb7f1868a39f5cf6c03af04fdce791c"
+  },
+  "run_log": "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/ project1/data-Project1/results_reproduced/run.log",
+  "completed_at_utc": "2026-10-05T11:02:49.076065+00:00",
+  "best_candidate_id": "linear_svm__mf20000__ng1-1__mindf1__subtf1__C1",
+  "best_validation_accuracy": 0.9402985074626866,
+  "best_validation_macro_f1": 0.9403410595794117,
+  "plot_generation": {
+    "generated": [
+      "validation_model_comparison.png",
+      "validation_tuning_curves.png",
+      "validation_macro_f1.png",
+      "single_factor_C.png",
+      "single_factor_alpha.png",
+      "feature_comparison.png",
+      "confusion_matrix_best.png"
+    ],
+    "failed": {},
+    "skipped": []
+  },
+  "final_fit_warnings": []
+}

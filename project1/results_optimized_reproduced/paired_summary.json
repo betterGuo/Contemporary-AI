@@ -1,0 +1,85 @@
+{
+  "reference_arm": "baseline",
+  "seeds": [
+    17,
+    29,
+    53,
+    89,
+    149
+  ],
+  "arms": {
+    "baseline": {
+      "macro_f1_mean": 0.9396399619185594,
+      "macro_f1_sample_sd": 0.005388019389865946,
+      "accuracy_mean": 0.9394843962008141,
+      "accuracy_sample_sd": 0.005414672982153312,
+      "delta_mean": 0.0,
+      "delta_sample_sd": 0.0,
+      "paired_accuracy_delta_mean": 0.0,
+      "paired_accuracy_delta_sample_sd": 0.0,
+      "deltas_by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "interpretation": "Descriptive paired split sensitivity only; folds overlap; not a confidence interval or significance test."
+    },
+    "best_word": {
+      "macro_f1_mean": 0.943992494780647,
+      "macro_f1_sample_sd": 0.006648069284946939,
+      "accuracy_mean": 0.9438263229308005,
+      "accuracy_sample_sd": 0.006636796255845649,
+      "delta_mean": 0.0043525328620875,
+      "delta_sample_sd": 0.00268584195671803,
+      "paired_accuracy_delta_mean": 0.004341926729986434,
+      "paired_accuracy_delta_sample_sd": 0.002609957131841459,
+      "deltas_by_seed": [
+        0.007549032941260081,
+        0.006058014522055899,
+        0.004942502136958904,
+        0.0012193359056620334,
+        0.001993778804500579
+      ],
+      "interpretation": "Descriptive paired split sensitivity only; folds overlap; not a confidence interval or significance test."
+    },
+    "char_only": {
+      "macro_f1_mean": 0.939193319579863,
+      "macro_f1_sample_sd": 0.00810501422155984,
+      "accuracy_mean": 0.9389416553595659,
+      "accuracy_sample_sd": 0.008281245329534418,
+      "delta_mean": -0.000446642338696468,
+      "delta_sample_sd": 0.006392276172703921,
+      "paired_accuracy_delta_mean": -0.0005427408412482793,
+      "paired_accuracy_delta_sample_sd": 0.006371428429782349,
+      "deltas_by_seed": [
+        0.008221521650074393,
+        -0.005956524799370588,
+        0.002203960214549272,
+        0.0007751515551914778,
+        -0.007477320313926894
+      ],
+      "interpretation": "Descriptive paired split sensitivity only; folds overlap; not a confidence interval or significance test."
+    },
+    "best_fusion": {
+      "macro_f1_mean": 0.9479624549385207,
+      "macro_f1_sample_sd": 0.004970860446460955,
+      "accuracy_mean": 0.9477611940298507,
+      "accuracy_sample_sd": 0.0050994899519582445,
+      "delta_mean": 0.008322493019961307,
+      "delta_sample_sd": 0.0033279909444050037,
+      "paired_accuracy_delta_mean": 0.00827679782903663,
+      "paired_accuracy_delta_sample_sd": 0.0033027575155055895,
+      "deltas_by_seed": [
+        0.01156427683831407,
+        0.009513225430852423,
+        0.0089062485419934,
+        0.008933077014242619,
+        0.002695637274404028
+      ],
+      "interpretation": "Descriptive paired split sensitivity only; folds overlap; not a confidence interval or significance test."
+    }
+  },
+  "interpretation": "Compute per-seed arm-minus-baseline deltas first, then report their mean and sample standard deviation. No confidence intervals, significance tests, or independence claims; the folds overlap and reuse previously observed labeled rows."
+}

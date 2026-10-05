@@ -1,0 +1,322 @@
+{
+  "seed": 42,
+  "validation_rows": 1474,
+  "text_length_quartile_cut_points_from_labeled_corpus_chars": [
+    737.75,
+    1139.0,
+    1773.5
+  ],
+  "validation_accuracy_by_length_quartile": [
+    {
+      "quartile": "Q1",
+      "rows": 366,
+      "baseline_accuracy": 0.8743169398907104,
+      "final_accuracy": 0.8961748633879781,
+      "accuracy_delta": 0.021857923497267784
+    },
+    {
+      "quartile": "Q2",
+      "rows": 365,
+      "baseline_accuracy": 0.9315068493150684,
+      "final_accuracy": 0.9342465753424658,
+      "accuracy_delta": 0.00273972602739736
+    },
+    {
+      "quartile": "Q3",
+      "rows": 375,
+      "baseline_accuracy": 0.9786666666666667,
+      "final_accuracy": 0.9813333333333333,
+      "accuracy_delta": 0.002666666666666595
+    },
+    {
+      "quartile": "Q4",
+      "rows": 368,
+      "baseline_accuracy": 0.9755434782608695,
+      "final_accuracy": 0.9809782608695652,
+      "accuracy_delta": 0.005434782608695676
+    }
+  ],
+  "class_2_and_7_metrics": {
+    "2": {
+      "baseline": {
+        "precision": 0.8590604026845637,
+        "recall": 0.8707482993197279,
+        "f1": 0.8648648648648649,
+        "support": 147
+      },
+      "final": {
+        "precision": 0.8609271523178808,
+        "recall": 0.8843537414965986,
+        "f1": 0.87248322147651,
+        "support": 147
+      }
+    },
+    "7": {
+      "baseline": {
+        "precision": 0.8943661971830986,
+        "recall": 0.8581081081081081,
+        "f1": 0.8758620689655172,
+        "support": 148
+      },
+      "final": {
+        "precision": 0.9154929577464789,
+        "recall": 0.8783783783783784,
+        "f1": 0.896551724137931,
+        "support": 148
+      }
+    }
+  },
+  "baseline_errors": 88,
+  "final_errors": 76,
+  "corrected_baseline_errors": 24,
+  "new_errors_on_previously_correct_rows": 12,
+  "wrong_both": 64,
+  "changed_prediction_but_wrong_both": 14,
+  "corrected_examples": [
+    {
+      "original_index": 3520,
+      "subject": "Conner CP3204F info please",
+      "target": 2,
+      "baseline_prediction": 7,
+      "final_prediction": 2,
+      "text_chars": 346,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 2607,
+      "subject": "Re: Countersteering_FAQ please post",
+      "target": 4,
+      "baseline_prediction": 3,
+      "final_prediction": 4,
+      "text_chars": 515,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 324,
+      "subject": "PBM+ 10dec91 when's'the'new'version?",
+      "target": 0,
+      "baseline_prediction": 7,
+      "final_prediction": 0,
+      "text_chars": 306,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 1117,
+      "subject": "LGA ncrypt source",
+      "target": 6,
+      "baseline_prediction": 0,
+      "final_prediction": 6,
+      "text_chars": 27218,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 1899,
+      "subject": "Re: Voice synth chips",
+      "target": 7,
+      "baseline_prediction": 6,
+      "final_prediction": 7,
+      "text_chars": 407,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 3286,
+      "subject": "Re: Weitek P9000 Future Plans",
+      "target": 2,
+      "baseline_prediction": 0,
+      "final_prediction": 2,
+      "text_chars": 822,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 1443,
+      "subject": "Which sound board to buy?",
+      "target": 1,
+      "baseline_prediction": 7,
+      "final_prediction": 1,
+      "text_chars": 1506,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 4339,
+      "subject": "Re: Isuzu Amigo Opinions sought",
+      "target": 3,
+      "baseline_prediction": 4,
+      "final_prediction": 3,
+      "text_chars": 769,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 5085,
+      "subject": "Membrane keypad with custom legend.",
+      "target": 7,
+      "baseline_prediction": 1,
+      "final_prediction": 7,
+      "text_chars": 851,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 3560,
+      "subject": "Crypto Conference",
+      "target": 6,
+      "baseline_prediction": 0,
+      "final_prediction": 6,
+      "text_chars": 564,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 6580,
+      "subject": "Help with 3C503 and NCSA Telnet",
+      "target": 2,
+      "baseline_prediction": 0,
+      "final_prediction": 2,
+      "text_chars": 490,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 3982,
+      "subject": "Re: Development tools for 65C816?",
+      "target": 7,
+      "baseline_prediction": 4,
+      "final_prediction": 7,
+      "text_chars": 766,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 5545,
+      "subject": "Diamond Stelth 24- any good?",
+      "target": 0,
+      "baseline_prediction": 2,
+      "final_prediction": 0,
+      "text_chars": 302,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 3624,
+      "subject": "DIAMOND 24-WINDOWS 3.1 CONFLICT",
+      "target": 1,
+      "baseline_prediction": 2,
+      "final_prediction": 1,
+      "text_chars": 613,
+      "change": "baseline_wrong_final_correct"
+    },
+    {
+      "original_index": 404,
+      "subject": "ISSA '93 Conference",
+      "target": 6,
+      "baseline_prediction": 3,
+      "final_prediction": 6,
+      "text_chars": 282,
+      "change": "baseline_wrong_final_correct"
+    }
+  ],
+  "new_error_examples": [
+    {
+      "original_index": 7351,
+      "subject": "Re: images of earth",
+      "target": 0,
+      "baseline_prediction": 0,
+      "final_prediction": 5,
+      "text_chars": 719,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 2666,
+      "subject": "M. contagiosem",
+      "target": 8,
+      "baseline_prediction": 8,
+      "final_prediction": 7,
+      "text_chars": 660,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 6933,
+      "subject": "Viewsonic 17 experience sought",
+      "target": 1,
+      "baseline_prediction": 1,
+      "final_prediction": 2,
+      "text_chars": 444,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 6103,
+      "subject": "Western Digital 90C31 Driver",
+      "target": 1,
+      "baseline_prediction": 1,
+      "final_prediction": 8,
+      "text_chars": 1231,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 2092,
+      "subject": "Re: REAL-3D",
+      "target": 0,
+      "baseline_prediction": 0,
+      "final_prediction": 1,
+      "text_chars": 749,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 5136,
+      "subject": "Re: univesa driver",
+      "target": 0,
+      "baseline_prediction": 0,
+      "final_prediction": 2,
+      "text_chars": 716,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 1848,
+      "subject": "Re: Need source for old Radio Shack ste",
+      "target": 7,
+      "baseline_prediction": 7,
+      "final_prediction": 3,
+      "text_chars": 328,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 4048,
+      "subject": "Re: How to the disks copy protected.",
+      "target": 7,
+      "baseline_prediction": 7,
+      "final_prediction": 2,
+      "text_chars": 1068,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 781,
+      "subject": "Honda Mailing list?",
+      "target": 3,
+      "baseline_prediction": 3,
+      "final_prediction": 5,
+      "text_chars": 203,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 4336,
+      "subject": "[bitmap] Re: What does the .bmp format mean?",
+      "target": 1,
+      "baseline_prediction": 1,
+      "final_prediction": 0,
+      "text_chars": 329,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 6429,
+      "subject": "Delayed-Write-Caches",
+      "target": 2,
+      "baseline_prediction": 2,
+      "final_prediction": 1,
+      "text_chars": 818,
+      "change": "baseline_correct_final_wrong"
+    },
+    {
+      "original_index": 7320,
+      "subject": "What SVGA ?",
+      "target": 2,
+      "baseline_prediction": 2,
+      "final_prediction": 0,
+      "text_chars": 835,
+      "change": "baseline_correct_final_wrong"
+    }
+  ]
+}
