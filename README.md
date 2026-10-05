@@ -35,3 +35,9 @@ python optimize_experiment.py --data-dir . --output-dir results_optimized_new
 ```
 
 运行需要先安装 Conda。请勿覆盖仓库中已验收的结果目录。原始课程数据和教师要求 PDF 未随仓库公开，也未为课程资料附加再分发许可；数据文件名、格式和复现流程见使用说明。
+
+## 仓库组织约定
+
+后续实验分别放在 `project2/`、`project3/` 等目录，每个项目包含自己的 README、代码、环境配置和报告。根目录 `.gitignore` 只管理通用缓存、虚拟环境、临时文件和本地密钥；数据及重跑目录的规则放在各项目的 `.gitignore` 中，不要笼统忽略所有实验结果。
+
+根目录 `.gitattributes` 自动识别文本，常用代码与文档使用 LF，二进制文件不转换换行。Project 1 在自己的 `.gitattributes` 中保留原文件字节，以保障冻结源码、环境锁和结果的 SHA-256 核验；新项目默认使用仓库通用规则，只有确需字节级保存时才添加项目例外。

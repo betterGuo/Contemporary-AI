@@ -1,5 +1,24 @@
-# Preserve frozen experiment bytes and hashes, including CSV CRLF line endings.
-project1/** -text
-README.md text eol=lf
+# Repository defaults; project-level attributes may override these rules.
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
 .gitignore text eol=lf
 .gitattributes text eol=lf
+
+# Binary artifacts must not undergo newline conversion.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.npy binary
+*.npz binary
+*.pkl binary
+*.joblib binary

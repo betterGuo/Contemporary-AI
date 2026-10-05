@@ -1,0 +1,12 @@
+# Course datasets are obtained separately from the authorized source.
+/train_data.csv
+/test_data_unlabeled.csv
+
+# New runs are local; keep the four verified result directories tracked.
+/results_*_rerun_*/
+/results_baseline_new*/
+/results_baseline_reproduced_*/
+/results_optimized_new*/
+/results_optimized_reproduced_[0-9]*/
+/exploration_new.json
+/optimization_check_local.json

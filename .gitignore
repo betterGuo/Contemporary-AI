@@ -1,13 +1,22 @@
+# Operating-system metadata
 .DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python caches and local environments
 __pycache__/
 *.py[cod]
 .venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local secrets; keep shareable configuration templates
 .env
 .env.*
+!.env.example
+!.env.template
+
+# Temporary working files (project-specific rules live in each project)
 tmp/
-project1/train_data.csv
-project1/test_data_unlabeled.csv
-project1/results_*_rerun_*/
-project1/results_optimized_new/
-project1/results_optimized_new_reproduced/
-project1/results_baseline_new/

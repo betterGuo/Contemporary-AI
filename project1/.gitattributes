@@ -1,0 +1,7 @@
+# Frozen scripts, locks and results are verified by their exact SHA-256 bytes.
+# Preserve original line endings, including CSV CRLF, on every platform.
+** -text !eol
+
+# These editable repository configuration files are not experiment evidence.
+.gitignore text eol=lf
+.gitattributes text eol=lf
