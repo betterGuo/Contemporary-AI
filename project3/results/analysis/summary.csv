@@ -1,0 +1,5 @@
+﻿run,n_test,n_correct,test_accuracy_pct,epochs,first_peak_val_epoch,peak_val_accuracy_pct
+baseline,10000,7779,77.79,8,8,78.15999984741211
+augment,10000,7934,79.34,8,8,79.93999719619751
+attention,10000,7803,78.03,8,8,78.64000201225281
+both,10000,7895,78.95,8,8,79.83999848365784

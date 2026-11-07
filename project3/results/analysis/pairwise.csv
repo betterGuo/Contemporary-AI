@@ -1,0 +1,7 @@
+﻿from,to,both_correct,corrected,regressed,both_wrong,delta_pp
+baseline,augment,7121,813,658,1408,1.55
+baseline,attention,7233,570,546,1651,0.24
+baseline,both,7120,775,659,1446,1.16
+augment,attention,7133,670,801,1396,-1.31
+augment,both,7518,377,416,1689,-0.39
+attention,both,7129,766,674,1431,0.92

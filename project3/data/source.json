@@ -1,0 +1,59 @@
+{
+  "source_url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz",
+  "archive_name": "cifar-10-python.tar.gz",
+  "acquisition": "verified existing archive",
+  "archive_md5": "c58f30108f718f92721af3b95e74349a",
+  "archive_sha256": "6d958be074577803d12ecdefd02955f39262c83c16fe9348329d7fe0b5c001ce",
+  "npz_sha256": "54c285eb8a5ee59d41b36fbe5931f55bd546319bb4e569d73ab04e9427d38593",
+  "image_layout": "NHWC RGB uint8",
+  "label_dtype": "int64",
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "train_shape": [
+    50000,
+    32,
+    32,
+    3
+  ],
+  "test_shape": [
+    10000,
+    32,
+    32,
+    3
+  ],
+  "train_counts": [
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000
+  ],
+  "test_counts": [
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "order": "data_batch_1 to data_batch_5 and test_batch in their original order"
+}

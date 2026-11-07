@@ -1,0 +1,10 @@
+seed,contrast,delta_pp
+20261107,augmentation_main,1.235
+20261107,attention_main,-0.075
+20261107,interaction,-0.63
+20261108,augmentation_main,2.155
+20261108,attention_main,0.255
+20261108,interaction,-0.29
+20261109,augmentation_main,1.64
+20261109,attention_main,-0.13
+20261109,interaction,1.06

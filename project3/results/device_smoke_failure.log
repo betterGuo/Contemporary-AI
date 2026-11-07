@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/实验三-CIFAR10/train.py", line 173, in <module>
+    main()
+  File "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/实验三-CIFAR10/train.py", line 155, in main
+    train_group(name, data, args, cfg)
+  File "/Users/guoyuhang/Desktop/26年秋季学期/当代人工智能/实验三-CIFAR10/train.py", line 109, in train_group
+    loss.backward()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.

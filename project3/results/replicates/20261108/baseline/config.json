@@ -1,0 +1,19 @@
+{
+  "group": "baseline",
+  "augmentation": false,
+  "attention": false,
+  "parameters": 289418,
+  "epochs": 8,
+  "batch": 256,
+  "lr": 0.002,
+  "seed": 20261108,
+  "device": "mps",
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "scheduler": "cosine",
+  "torch": "2.9.1",
+  "python": "3.12.6",
+  "system": "macOS-26.4-arm64-arm-64bit",
+  "split_sha256": "fd02b03d60e9680ae258ea70b6d4bc548dd2c95457dc7825ed0d2d806fefd197",
+  "model_sha256": "605e5db8aac819c27135b96305d683b020f5cafeb59bed201922459ddcb41cc8"
+}

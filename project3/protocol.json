@@ -1,0 +1,11 @@
+{
+  "primary_training_seed": 20261107,
+  "replication_training_seeds": [20261108, 20261109],
+  "split_seed": 20261107,
+  "groups": ["baseline","augment","attention","both"],
+  "epochs_per_run": 8,
+  "batch_size": 256,
+  "validation_selection": "maximum accuracy; earliest epoch wins a tie",
+  "primary_measure": "official test top-1 accuracy",
+  "design": "Same stratified split for all runs. Three paired training seeds, fixed budgets; no hyperparameter changes based on test results."
+}

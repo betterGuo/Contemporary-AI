@@ -1,0 +1,34 @@
+{
+  "seed": 20261107,
+  "split": "official test, all 10000 images",
+  "mode": "CPU eval",
+  "gate": "2 * sigmoid(gate.expand output)",
+  "results": {
+    "attention": {
+      "epoch": 8,
+      "checkpoint_sha256": "cef9c07ee132d110b1ce29f284ae34bad33b89ab9b6377cd83ec973cacb60a6a",
+      "n_gates": 640000,
+      "mean": 0.997099595767539,
+      "mean_abs_deviation_from_one": 0.04312653539301828,
+      "percentiles_5_50_95": [
+        0.8936129897832871,
+        0.9995850920677185,
+        1.087745851278305
+      ],
+      "mean_across_channel_of_per_channel_std_across_images": 0.024274964044228343
+    },
+    "both": {
+      "epoch": 8,
+      "checkpoint_sha256": "3b26a9d488c9c85a1906b25ae9f5da34954faef5ce92c2db8051dd46b6719f32",
+      "n_gates": 640000,
+      "mean": 0.96724550987361,
+      "mean_abs_deviation_from_one": 0.04548048062147573,
+      "percentiles_5_50_95": [
+        0.8780193269252777,
+        0.9736400246620178,
+        1.04155855178833
+      ],
+      "mean_across_channel_of_per_channel_std_across_images": 0.02492370733094868
+    }
+  }
+}

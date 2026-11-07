@@ -1,0 +1,17 @@
+rule,test_index,group,true_class,predicted_class,target_logit
+combined fixes baseline,25,baseline,bird,dog,0.9256795048713684
+combined loses baseline,1,baseline,ship,ship,6.689729690551758
+all four incorrect,24,baseline,dog,deer,0.1289048194885254
+all four correct,2,baseline,ship,ship,4.399037837982178
+combined fixes baseline,25,augment,bird,bird,2.1508970260620117
+combined loses baseline,1,augment,ship,automobile,5.2032012939453125
+all four incorrect,24,augment,dog,deer,0.722959578037262
+all four correct,2,augment,ship,ship,4.314486026763916
+combined fixes baseline,25,attention,bird,bird,2.8444478511810303
+combined loses baseline,1,attention,ship,ship,6.347830295562744
+all four incorrect,24,attention,dog,deer,0.6342946887016296
+all four correct,2,attention,ship,ship,3.5952517986297607
+combined fixes baseline,25,both,bird,bird,2.648973226547241
+combined loses baseline,1,both,ship,automobile,5.793458938598633
+all four incorrect,24,both,dog,deer,0.4093100428581238
+all four correct,2,both,ship,ship,3.5553205013275146
