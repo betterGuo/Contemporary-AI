@@ -1,0 +1,2033 @@
+[
+  {
+    "event": "visit",
+    "path": [],
+    "depth_left": 4,
+    "player": "A",
+    "pos_a": "A",
+    "pos_b": "B",
+    "remaining": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "score_a": 0,
+    "score_b": 0,
+    "utility": 0,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1"
+    ],
+    "depth_left": 3,
+    "player": "B",
+    "pos_a": "T1",
+    "pos_b": "B",
+    "remaining": [
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": 0,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T2"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T2",
+    "remaining": [
+      "T3",
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": -2,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T3",
+    "pos_b": "T2",
+    "remaining": [
+      "T4"
+    ],
+    "score_a": 0,
+    "score_b": -2,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T4",
+    "remaining": [],
+    "score_a": 0,
+    "score_b": -1,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "future_value": -1,
+    "utility": 1,
+    "flag": "EXACT",
+    "best_target": "T4"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T2",
+      "T4"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T4",
+    "pos_b": "T2",
+    "remaining": [
+      "T3"
+    ],
+    "score_a": -6,
+    "score_b": -2,
+    "utility": -4,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T2",
+      "T4",
+      "T3"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T3",
+    "remaining": [],
+    "score_a": -6,
+    "score_b": -1,
+    "utility": -5,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T1",
+      "T2",
+      "T4",
+      "T3"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -5
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T2",
+      "T4"
+    ],
+    "future_value": -1,
+    "utility": -5,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T2"
+    ],
+    "future_value": 0,
+    "utility": 1,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T3"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T3",
+    "remaining": [
+      "T2",
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": 3,
+    "utility": -4,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T3",
+      "T2"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T2",
+    "pos_b": "T3",
+    "remaining": [
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": 3,
+    "utility": -4,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T3",
+      "T2",
+      "T4"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T4",
+    "remaining": [],
+    "score_a": -1,
+    "score_b": 4,
+    "utility": -5,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T1",
+      "T3",
+      "T2",
+      "T4"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -5
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T3",
+      "T2"
+    ],
+    "future_value": -1,
+    "utility": -5,
+    "flag": "EXACT",
+    "best_target": "T4"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T3",
+      "T4"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T4",
+    "pos_b": "T3",
+    "remaining": [
+      "T2"
+    ],
+    "score_a": -6,
+    "score_b": 3,
+    "utility": -9,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T3",
+      "T4",
+      "T2"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T2",
+    "remaining": [],
+    "score_a": -6,
+    "score_b": 3,
+    "utility": -9,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T1",
+      "T3",
+      "T4",
+      "T2"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -9
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T3",
+      "T4"
+    ],
+    "future_value": 0,
+    "utility": -9,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T3"
+    ],
+    "future_value": -1,
+    "utility": -5,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T4"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T4",
+    "remaining": [
+      "T2",
+      "T3"
+    ],
+    "score_a": -1,
+    "score_b": -3,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T4",
+      "T2"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T2",
+    "pos_b": "T4",
+    "remaining": [
+      "T3"
+    ],
+    "score_a": -1,
+    "score_b": -3,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T4",
+      "T2",
+      "T3"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T3",
+    "remaining": [],
+    "score_a": -1,
+    "score_b": -2,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T1",
+      "T4",
+      "T2",
+      "T3"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T4",
+      "T2"
+    ],
+    "future_value": -1,
+    "utility": 1,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T4",
+      "T3"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T3",
+    "pos_b": "T4",
+    "remaining": [
+      "T2"
+    ],
+    "score_a": 0,
+    "score_b": -3,
+    "utility": 3,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T1",
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T2",
+    "remaining": [],
+    "score_a": 0,
+    "score_b": -3,
+    "utility": 3,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T1",
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 3
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T4",
+      "T3"
+    ],
+    "future_value": 0,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1",
+      "T4"
+    ],
+    "future_value": 1,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T1"
+    ],
+    "future_value": -4,
+    "utility": -5,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2"
+    ],
+    "depth_left": 3,
+    "player": "B",
+    "pos_a": "T2",
+    "pos_b": "B",
+    "remaining": [
+      "T1",
+      "T3",
+      "T4"
+    ],
+    "score_a": 2,
+    "score_b": 0,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T1"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T1",
+    "remaining": [
+      "T3",
+      "T4"
+    ],
+    "score_a": 2,
+    "score_b": 1,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T1",
+      "T3"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T3",
+    "pos_b": "T1",
+    "remaining": [
+      "T4"
+    ],
+    "score_a": 3,
+    "score_b": 1,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T1",
+      "T3",
+      "T4"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T4",
+    "remaining": [],
+    "score_a": 3,
+    "score_b": -4,
+    "utility": 7,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T2",
+      "T1",
+      "T3",
+      "T4"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 7
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T1",
+      "T3"
+    ],
+    "future_value": 5,
+    "utility": 7,
+    "flag": "EXACT",
+    "best_target": "T4"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T1",
+      "T4"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T4",
+    "pos_b": "T1",
+    "remaining": [
+      "T3"
+    ],
+    "score_a": 3,
+    "score_b": 1,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T1",
+      "T4",
+      "T3"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T3",
+    "remaining": [],
+    "score_a": 3,
+    "score_b": 2,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T2",
+      "T1",
+      "T4",
+      "T3"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T1",
+      "T4"
+    ],
+    "future_value": -1,
+    "utility": 1,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T1"
+    ],
+    "future_value": 6,
+    "utility": 7,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T3"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T3",
+    "remaining": [
+      "T1",
+      "T4"
+    ],
+    "score_a": 2,
+    "score_b": 3,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T3",
+      "T1"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T1",
+    "pos_b": "T3",
+    "remaining": [
+      "T4"
+    ],
+    "score_a": 5,
+    "score_b": 3,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T3",
+      "T1",
+      "T4"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T4",
+    "remaining": [],
+    "score_a": 5,
+    "score_b": 4,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T2",
+      "T3",
+      "T1",
+      "T4"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T3",
+      "T1"
+    ],
+    "future_value": -1,
+    "utility": 1,
+    "flag": "EXACT",
+    "best_target": "T4"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T4",
+    "pos_b": "T3",
+    "remaining": [
+      "T1"
+    ],
+    "score_a": 3,
+    "score_b": 3,
+    "utility": 0,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T3",
+      "T4",
+      "T1"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T1",
+    "remaining": [],
+    "score_a": 3,
+    "score_b": 6,
+    "utility": -3,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T2",
+      "T3",
+      "T4",
+      "T1"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -3
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "future_value": -3,
+    "utility": -3,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T3"
+    ],
+    "future_value": 2,
+    "utility": 1,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T4"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T4",
+    "remaining": [
+      "T1",
+      "T3"
+    ],
+    "score_a": 2,
+    "score_b": -3,
+    "utility": 5,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T4",
+      "T1"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T1",
+    "pos_b": "T4",
+    "remaining": [
+      "T3"
+    ],
+    "score_a": 5,
+    "score_b": -3,
+    "utility": 8,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T4",
+      "T1",
+      "T3"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T3",
+    "remaining": [],
+    "score_a": 5,
+    "score_b": -2,
+    "utility": 7,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T2",
+      "T4",
+      "T1",
+      "T3"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 7
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T4",
+      "T1"
+    ],
+    "future_value": -1,
+    "utility": 7,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T4",
+      "T3"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T3",
+    "pos_b": "T4",
+    "remaining": [
+      "T1"
+    ],
+    "score_a": 3,
+    "score_b": -3,
+    "utility": 6,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T2",
+      "T4",
+      "T3",
+      "T1"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T1",
+    "remaining": [],
+    "score_a": 3,
+    "score_b": -6,
+    "utility": 9,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T2",
+      "T4",
+      "T3",
+      "T1"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 9
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T4",
+      "T3"
+    ],
+    "future_value": 3,
+    "utility": 9,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2",
+      "T4"
+    ],
+    "future_value": 4,
+    "utility": 9,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T2"
+    ],
+    "future_value": -1,
+    "utility": 1,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3"
+    ],
+    "depth_left": 3,
+    "player": "B",
+    "pos_a": "T3",
+    "pos_b": "B",
+    "remaining": [
+      "T1",
+      "T2",
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": 0,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T1"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T1",
+    "remaining": [
+      "T2",
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": 1,
+    "utility": -2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T1",
+      "T2"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T2",
+    "pos_b": "T1",
+    "remaining": [
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": 1,
+    "utility": -2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T1",
+      "T2",
+      "T4"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T4",
+    "remaining": [],
+    "score_a": -1,
+    "score_b": -4,
+    "utility": 3,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T3",
+      "T1",
+      "T2",
+      "T4"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 3
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T1",
+      "T2"
+    ],
+    "future_value": 5,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T4"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T1",
+      "T4"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T4",
+    "pos_b": "T1",
+    "remaining": [
+      "T2"
+    ],
+    "score_a": 0,
+    "score_b": 1,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T1",
+      "T4",
+      "T2"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T2",
+    "remaining": [],
+    "score_a": 0,
+    "score_b": 1,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T3",
+      "T1",
+      "T4",
+      "T2"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T1",
+      "T4"
+    ],
+    "future_value": 0,
+    "utility": -1,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T1"
+    ],
+    "future_value": 5,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T2"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T2",
+    "remaining": [
+      "T1",
+      "T4"
+    ],
+    "score_a": -1,
+    "score_b": -2,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T2",
+      "T1"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T1",
+    "pos_b": "T2",
+    "remaining": [
+      "T4"
+    ],
+    "score_a": 2,
+    "score_b": -2,
+    "utility": 4,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T2",
+      "T1",
+      "T4"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T4",
+    "remaining": [],
+    "score_a": 2,
+    "score_b": -1,
+    "utility": 3,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T3",
+      "T2",
+      "T1",
+      "T4"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 3
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T2",
+      "T1"
+    ],
+    "future_value": -1,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T4"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T2",
+      "T4"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T4",
+    "pos_b": "T2",
+    "remaining": [
+      "T1"
+    ],
+    "score_a": 0,
+    "score_b": -2,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T2",
+      "T4",
+      "T1"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T1",
+    "remaining": [],
+    "score_a": 0,
+    "score_b": 1,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T3",
+      "T2",
+      "T4",
+      "T1"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T2",
+      "T4"
+    ],
+    "future_value": -3,
+    "utility": -1,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T2"
+    ],
+    "future_value": 2,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T4"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T4",
+    "remaining": [
+      "T1",
+      "T2"
+    ],
+    "score_a": -1,
+    "score_b": -3,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T4",
+      "T1"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T1",
+    "pos_b": "T4",
+    "remaining": [
+      "T2"
+    ],
+    "score_a": 2,
+    "score_b": -3,
+    "utility": 5,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T4",
+      "T1",
+      "T2"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T2",
+    "remaining": [],
+    "score_a": 2,
+    "score_b": -3,
+    "utility": 5,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T3",
+      "T4",
+      "T1",
+      "T2"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 5
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T4",
+      "T1"
+    ],
+    "future_value": 0,
+    "utility": 5,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T4",
+      "T2"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T2",
+    "pos_b": "T4",
+    "remaining": [
+      "T1"
+    ],
+    "score_a": -1,
+    "score_b": -3,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T3",
+      "T4",
+      "T2",
+      "T1"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T1",
+    "remaining": [],
+    "score_a": -1,
+    "score_b": -6,
+    "utility": 5,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T3",
+      "T4",
+      "T2",
+      "T1"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": 5
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T4",
+      "T2"
+    ],
+    "future_value": 3,
+    "utility": 5,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3",
+      "T4"
+    ],
+    "future_value": 3,
+    "utility": 5,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T3"
+    ],
+    "future_value": 4,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4"
+    ],
+    "depth_left": 3,
+    "player": "B",
+    "pos_a": "T4",
+    "pos_b": "B",
+    "remaining": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "score_a": -1,
+    "score_b": 0,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T1"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T1",
+    "remaining": [
+      "T2",
+      "T3"
+    ],
+    "score_a": -1,
+    "score_b": 1,
+    "utility": -2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T1",
+      "T2"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T2",
+    "pos_b": "T1",
+    "remaining": [
+      "T3"
+    ],
+    "score_a": -1,
+    "score_b": 1,
+    "utility": -2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T3",
+    "remaining": [],
+    "score_a": -1,
+    "score_b": 2,
+    "utility": -3,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T4",
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -3
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T1",
+      "T2"
+    ],
+    "future_value": -1,
+    "utility": -3,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T1",
+      "T3"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T3",
+    "pos_b": "T1",
+    "remaining": [
+      "T2"
+    ],
+    "score_a": 0,
+    "score_b": 1,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T1",
+      "T3",
+      "T2"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T2",
+    "remaining": [],
+    "score_a": 0,
+    "score_b": 1,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T4",
+      "T1",
+      "T3",
+      "T2"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T1",
+      "T3"
+    ],
+    "future_value": 0,
+    "utility": -1,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T1"
+    ],
+    "future_value": 1,
+    "utility": -1,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T2"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T2",
+    "remaining": [
+      "T1",
+      "T3"
+    ],
+    "score_a": -1,
+    "score_b": -2,
+    "utility": 1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T2",
+      "T1"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T1",
+    "pos_b": "T2",
+    "remaining": [
+      "T3"
+    ],
+    "score_a": -4,
+    "score_b": -2,
+    "utility": -2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T2",
+      "T1",
+      "T3"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T3",
+    "remaining": [],
+    "score_a": -4,
+    "score_b": -1,
+    "utility": -3,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T4",
+      "T2",
+      "T1",
+      "T3"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -3
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T2",
+      "T1"
+    ],
+    "future_value": -1,
+    "utility": -3,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T2",
+      "T3"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T3",
+    "pos_b": "T2",
+    "remaining": [
+      "T1"
+    ],
+    "score_a": 0,
+    "score_b": -2,
+    "utility": 2,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T2",
+      "T3",
+      "T1"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T3",
+    "pos_b": "T1",
+    "remaining": [],
+    "score_a": 0,
+    "score_b": 1,
+    "utility": -1,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T4",
+      "T2",
+      "T3",
+      "T1"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -1
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T2",
+      "T3"
+    ],
+    "future_value": -3,
+    "utility": -1,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T2"
+    ],
+    "future_value": -2,
+    "utility": -1,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T3"
+    ],
+    "depth_left": 2,
+    "player": "A",
+    "pos_a": "T4",
+    "pos_b": "T3",
+    "remaining": [
+      "T1",
+      "T2"
+    ],
+    "score_a": -1,
+    "score_b": 3,
+    "utility": -4,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T3",
+      "T1"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T1",
+    "pos_b": "T3",
+    "remaining": [
+      "T2"
+    ],
+    "score_a": -4,
+    "score_b": 3,
+    "utility": -7,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T3",
+      "T1",
+      "T2"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T1",
+    "pos_b": "T2",
+    "remaining": [],
+    "score_a": -4,
+    "score_b": 3,
+    "utility": -7,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T4",
+      "T3",
+      "T1",
+      "T2"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -7
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T3",
+      "T1"
+    ],
+    "future_value": 0,
+    "utility": -7,
+    "flag": "EXACT",
+    "best_target": "T2"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "depth_left": 1,
+    "player": "B",
+    "pos_a": "T2",
+    "pos_b": "T3",
+    "remaining": [
+      "T1"
+    ],
+    "score_a": -1,
+    "score_b": 3,
+    "utility": -4,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      "T4",
+      "T3",
+      "T2",
+      "T1"
+    ],
+    "depth_left": 0,
+    "player": "A",
+    "pos_a": "T2",
+    "pos_b": "T1",
+    "remaining": [],
+    "score_a": -1,
+    "score_b": 6,
+    "utility": -7,
+    "alpha_future": "-inf",
+    "beta_future": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      "T4",
+      "T3",
+      "T2",
+      "T1"
+    ],
+    "reason": "depth_limit",
+    "future_value": 0,
+    "utility": -7
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "future_value": -3,
+    "utility": -7,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4",
+      "T3"
+    ],
+    "future_value": -3,
+    "utility": -7,
+    "flag": "EXACT",
+    "best_target": "T1"
+  },
+  {
+    "event": "return",
+    "path": [
+      "T4"
+    ],
+    "future_value": -6,
+    "utility": -7,
+    "flag": "EXACT",
+    "best_target": "T3"
+  },
+  {
+    "event": "return",
+    "path": [],
+    "future_value": 3,
+    "utility": 3,
+    "flag": "EXACT",
+    "best_target": "T3"
+  }
+]

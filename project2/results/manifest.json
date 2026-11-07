@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-23T16:11:22.899646+08:00",
+  "timezone": "Asia/Shanghai",
+  "python": "3.12.6 (v3.12.6:a4a2d2b0d85, Sep  6 2024, 16:08:03) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "executable": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+  "platform": "macOS-26.4-arm64-arm-64bit",
+  "machine": "arm64",
+  "seed": 20261023,
+  "repeats": 21,
+  "warmups": 3,
+  "clock": {
+    "implementation": "mach_absolute_time()",
+    "monotonic": true,
+    "adjustable": false,
+    "resolution": 4.166666666666667e-08
+  },
+  "timing_unit": "nanoseconds",
+  "raw_runs": 8946,
+  "configurations": 426,
+  "reuse_batch_runs": 504,
+  "trace_during_benchmark": false,
+  "fresh_game_cache_each_solve": true,
+  "file_sha256": {
+    "data/problem1.json": "be3139b8d9f4c722394abe3b67d3612d2c3fdac74a845c2f0cfcc95f696e864d",
+    "data/problem2.json": "cf898200a00eb4963ca1f8f48305ae4b0ab8aeb55e385a697b76586ccd8a5888",
+    "data/problem3.json": "9b11ce1b5daabfb291f46f340052fe574f86116cbf6ccd8f35d29d40d0bbfe57",
+    "data/problem4.json": "5dc851c438e4e867828e94465d5004291f4685f7d60610de3213d44576e21858",
+    "lab2/__init__.py": "c0ddde0ec925d48ef5a5232036cd09651b50117a7150936e85b745227f8dccab",
+    "lab2/__main__.py": "7539749b103f265e7c1a2713c21821edfc4176adb8fdec0b8eb7667e44936664",
+    "lab2/experiments.py": "50b1aa8897a85b416978da9924dbe41bc5f8a2b8397806362a75a9aed0753f53",
+    "lab2/games.py": "d32f029fef9949e398ad27c6c428d228ba0fdb271351eca897d1b6857c9d33c2",
+    "lab2/pathfinding.py": "1f061fb2ba4abc74343e23021589eff77c79622e48bd6a033062bfec984f89d0",
+    "lab2/plots.py": "c659a2953d09bd5815c2a0b86ffc44052c40796f15805418464cc6b0c327a84a",
+    "lab2/tasks.py": "35a9b735b209162f864fdc6319182b3d8313d925fc7a2b46a9c651ceca5096f8",
+    "tests/__init__.py": "ee51582049acf6ae7d33471b5e0db68e347ac208b5a2f8af9f67f8fbbd6114ff",
+    "tests/oracles.py": "d957ada654c7b3befa75222f2b24b40e65ac8e6c1700588a1466f4dec2be5d5b",
+    "tests/test_games.py": "474801c6aec8b3f5f72b78625e4b35ddaf73eeee09a95677f63516d47de7f6d0",
+    "tests/test_integration.py": "278122d49d9a1e1f5ab2e74d3e2527572e8c8c10b35e61d496bfb3ed76f6719b",
+    "tests/test_pathfinding.py": "c0d3ece9da2115656c5da1f91862f09ad6ae576a5ea6e3368d3dcb5c78e02130"
+  },
+  "requirement_sha256": "07cbb1fe7ba794798e65ad149215c02a195d4c9e0852d484c2f810c131483ff9",
+  "plot_regeneration": {
+    "timestamp": "2026-10-23T16:13:20.037913+08:00",
+    "reason": "Adjusted shared y-axis limit to include all measured values and clarified heuristic caption; timing records unchanged.",
+    "previous_source_sha256": "58e5ccb948ec5586ffa871f4c888b8ffe9c086dd3c6af316f1854305490e92a9"
+  }
+}

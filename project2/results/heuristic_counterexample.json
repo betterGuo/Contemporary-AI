@@ -1,0 +1,538 @@
+{
+  "scope": "拓展：额外允许内部零代价格，不是原题给定地图",
+  "grid": [
+    [
+      "S",
+      3,
+      "E"
+    ],
+    [
+      1,
+      0,
+      1
+    ]
+  ],
+  "start": [
+    0,
+    0
+  ],
+  "goal": [
+    0,
+    2
+  ],
+  "marker_costs": {
+    "E": 0
+  },
+  "runs": [
+    {
+      "heuristic": "zero",
+      "tie_break": "fifo",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "cost": 2,
+      "stats": {
+        "popped": 5,
+        "expanded": 4,
+        "generated": 9,
+        "discovered": 6,
+        "reopened": 0,
+        "stale_pops": 0,
+        "max_frontier": 2,
+        "elapsed_ns": 19083,
+        "preparation_ns": 3375
+      },
+      "trace": [
+        {
+          "event": "pop",
+          "node": [
+            0,
+            0
+          ],
+          "g": 0,
+          "h": 0,
+          "f": 0,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            0
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            1
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": false
+        }
+      ]
+    },
+    {
+      "heuristic": "zero",
+      "tie_break": "larger_g",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "cost": 2,
+      "stats": {
+        "popped": 5,
+        "expanded": 4,
+        "generated": 9,
+        "discovered": 6,
+        "reopened": 0,
+        "stale_pops": 0,
+        "max_frontier": 2,
+        "elapsed_ns": 13083,
+        "preparation_ns": 1917
+      },
+      "trace": [
+        {
+          "event": "pop",
+          "node": [
+            0,
+            0
+          ],
+          "g": 0,
+          "h": 0,
+          "f": 0,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            0
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            1
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": false
+        }
+      ]
+    },
+    {
+      "heuristic": "manhattan",
+      "tie_break": "fifo",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "cost": 3,
+      "stats": {
+        "popped": 3,
+        "expanded": 2,
+        "generated": 5,
+        "discovered": 5,
+        "reopened": 0,
+        "stale_pops": 0,
+        "max_frontier": 3,
+        "elapsed_ns": 9292,
+        "preparation_ns": 2417
+      },
+      "trace": [
+        {
+          "event": "pop",
+          "node": [
+            0,
+            0
+          ],
+          "g": 0,
+          "h": 2,
+          "f": 2,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            1
+          ],
+          "g": 3,
+          "h": 1,
+          "f": 4,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            2
+          ],
+          "g": 3,
+          "h": 0,
+          "f": 3,
+          "expanded": false
+        }
+      ]
+    },
+    {
+      "heuristic": "manhattan",
+      "tie_break": "larger_g",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "cost": 3,
+      "stats": {
+        "popped": 3,
+        "expanded": 2,
+        "generated": 5,
+        "discovered": 5,
+        "reopened": 0,
+        "stale_pops": 0,
+        "max_frontier": 3,
+        "elapsed_ns": 7791,
+        "preparation_ns": 1666
+      },
+      "trace": [
+        {
+          "event": "pop",
+          "node": [
+            0,
+            0
+          ],
+          "g": 0,
+          "h": 2,
+          "f": 2,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            1
+          ],
+          "g": 3,
+          "h": 1,
+          "f": 4,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            2
+          ],
+          "g": 3,
+          "h": 0,
+          "f": 3,
+          "expanded": false
+        }
+      ]
+    },
+    {
+      "heuristic": "goal_aware",
+      "tie_break": "fifo",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "cost": 2,
+      "stats": {
+        "popped": 5,
+        "expanded": 4,
+        "generated": 9,
+        "discovered": 6,
+        "reopened": 0,
+        "stale_pops": 0,
+        "max_frontier": 2,
+        "elapsed_ns": 14292,
+        "preparation_ns": 3833
+      },
+      "trace": [
+        {
+          "event": "pop",
+          "node": [
+            0,
+            0
+          ],
+          "g": 0,
+          "h": 0,
+          "f": 0,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            0
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            1
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": false
+        }
+      ]
+    },
+    {
+      "heuristic": "goal_aware",
+      "tie_break": "larger_g",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "cost": 2,
+      "stats": {
+        "popped": 5,
+        "expanded": 4,
+        "generated": 9,
+        "discovered": 6,
+        "reopened": 0,
+        "stale_pops": 0,
+        "max_frontier": 2,
+        "elapsed_ns": 12958,
+        "preparation_ns": 2958
+      },
+      "trace": [
+        {
+          "event": "pop",
+          "node": [
+            0,
+            0
+          ],
+          "g": 0,
+          "h": 0,
+          "f": 0,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            0
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            1
+          ],
+          "g": 1,
+          "h": 0,
+          "f": 1,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            1,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": true
+        },
+        {
+          "event": "pop",
+          "node": [
+            0,
+            2
+          ],
+          "g": 2,
+          "h": 0,
+          "f": 2,
+          "expanded": false
+        }
+      ]
+    }
+  ]
+}

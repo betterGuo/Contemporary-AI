@@ -1,0 +1,39 @@
+test_all_equal_optima_and_depth_beyond_terminal (test_games.TreasureTests.test_all_equal_optima_and_depth_beyond_terminal) ... ok
+test_invalid_parameters_are_rejected (test_games.TreasureTests.test_invalid_parameters_are_rejected) ... ok
+test_negative_gain_must_still_select_a_treasure (test_games.TreasureTests.test_negative_gain_must_still_select_a_treasure) ... ok
+test_nonzero_scores_current_player_and_partial_state (test_games.TreasureTests.test_nonzero_scores_current_player_and_partial_state) ... ok
+test_normalized_transpositions_have_real_cache_hits (test_games.TreasureTests.test_normalized_transpositions_have_real_cache_hits) ... ok
+test_problem4_depth2_and_depth4_examples (test_games.TreasureTests.test_problem4_depth2_and_depth4_examples) ... ok
+test_random_directed_games_multiple_depths (test_games.TreasureTests.test_random_directed_games_multiple_depths) ... ok
+test_successor_updates_only_acting_player_and_selected_treasure (test_games.TreasureTests.test_successor_updates_only_acting_player_and_selected_treasure) ... ok
+test_unreachable_actions_and_no_legal_move (test_games.TreasureTests.test_unreachable_actions_and_no_legal_move) ... ok
+test_bound_crossing_at_last_child_is_not_a_cutoff (test_games.TreeTests.test_bound_crossing_at_last_child_is_not_a_cutoff) ... ok
+test_cyclic_or_inconsistent_trees_are_rejected (test_games.TreeTests.test_cyclic_or_inconsistent_trees_are_rejected) ... ok
+test_leaf_and_invalid_empty_tree (test_games.TreeTests.test_leaf_and_invalid_empty_tree) ... ok
+test_problem3_given_shared_subtree_example (test_games.TreeTests.test_problem3_given_shared_subtree_example) ... ok
+test_random_trees_against_exhaustive_reference (test_games.TreeTests.test_random_trees_against_exhaustive_reference) ... ok
+test_tree_dict_roundtrip (test_games.TreeTests.test_tree_dict_roundtrip) ... ok
+test_true_cutoffs_and_direct_branch_metrics (test_games.TreeTests.test_true_cutoffs_and_direct_branch_metrics) ... ok
+test_cli_rejects_invalid_benchmark_settings_before_running (test_integration.IntegrationTests.test_cli_rejects_invalid_benchmark_settings_before_running) ... ok
+test_custom_cli_json_and_wrapper_no_path_contracts (test_integration.IntegrationTests.test_custom_cli_json_and_wrapper_no_path_contracts) ... ok
+test_four_cli_problem_outputs (test_integration.IntegrationTests.test_four_cli_problem_outputs) ... ok
+test_required_benchmark_rows_preserve_expected_values (test_integration.IntegrationTests.test_required_benchmark_rows_preserve_expected_values) ... ok
+test_samples_cli_writes_requested_file (test_integration.IntegrationTests.test_samples_cli_writes_requested_file) ... ok
+test_samples_exports_and_traces_match_independent_results (test_integration.IntegrationTests.test_samples_exports_and_traces_match_independent_results) ... ok
+test_admissible_inconsistent_heuristic_reopens_closed_nodes (test_pathfinding.PathfindingTests.test_admissible_inconsistent_heuristic_reopens_closed_nodes) ... ok
+test_bad_custom_heuristics_are_rejected (test_pathfinding.PathfindingTests.test_bad_custom_heuristics_are_rejected) ... ok
+test_directed_entry_cost_and_alt (test_pathfinding.PathfindingTests.test_directed_entry_cost_and_alt) ... ok
+test_disconnected_and_identical_endpoint (test_pathfinding.PathfindingTests.test_disconnected_and_identical_endpoint) ... ok
+test_goal_aware_and_alt_are_admissible_and_consistent (test_pathfinding.PathfindingTests.test_goal_aware_and_alt_are_admissible_and_consistent) ... ok
+test_internal_zero_cost_makes_raw_manhattan_suboptimal (test_pathfinding.PathfindingTests.test_internal_zero_cost_makes_raw_manhattan_suboptimal) ... ok
+test_invalid_grids_and_endpoints_are_rejected (test_pathfinding.PathfindingTests.test_invalid_grids_and_endpoints_are_rejected) ... ok
+test_metric_semantics_on_one_edge (test_pathfinding.PathfindingTests.test_metric_semantics_on_one_edge) ... ok
+test_problem1_given_example (test_pathfinding.PathfindingTests.test_problem1_given_example) ... ok
+test_problem2_given_example_and_free_goal (test_pathfinding.PathfindingTests.test_problem2_given_example_and_free_goal) ... ok
+test_problem4_all_36_distances (test_pathfinding.PathfindingTests.test_problem4_all_36_distances) ... ok
+test_random_positive_and_zero_cost_grids (test_pathfinding.PathfindingTests.test_random_positive_and_zero_cost_grids) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.503s
+
+OK

@@ -1,0 +1,219 @@
+[
+  {
+    "event": "visit",
+    "path": [],
+    "player": "MAX",
+    "alpha": "-inf",
+    "beta": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      0
+    ],
+    "player": "MIN",
+    "alpha": "-inf",
+    "beta": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      0,
+      0
+    ],
+    "player": "MAX",
+    "alpha": "-inf",
+    "beta": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      0,
+      0,
+      0
+    ],
+    "player": "MIN",
+    "alpha": "-inf",
+    "beta": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      0,
+      0,
+      0
+    ],
+    "value": 3
+  },
+  {
+    "event": "visit",
+    "path": [
+      0,
+      0,
+      1
+    ],
+    "player": "MIN",
+    "alpha": 3,
+    "beta": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      0,
+      0,
+      1
+    ],
+    "value": 5
+  },
+  {
+    "event": "visit",
+    "path": [
+      0,
+      1
+    ],
+    "player": "MAX",
+    "alpha": "-inf",
+    "beta": 5
+  },
+  {
+    "event": "visit",
+    "path": [
+      0,
+      1,
+      0
+    ],
+    "player": "MIN",
+    "alpha": "-inf",
+    "beta": 5
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      0,
+      1,
+      0
+    ],
+    "value": 6
+  },
+  {
+    "event": "cutoff",
+    "path": [
+      0,
+      1
+    ],
+    "alpha": 6,
+    "beta": 5,
+    "skipped_children": [
+      1
+    ]
+  },
+  {
+    "event": "visit",
+    "path": [
+      1
+    ],
+    "player": "MIN",
+    "alpha": 5,
+    "beta": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      1,
+      0
+    ],
+    "player": "MAX",
+    "alpha": 5,
+    "beta": "+inf"
+  },
+  {
+    "event": "visit",
+    "path": [
+      1,
+      0,
+      0
+    ],
+    "player": "MIN",
+    "alpha": 5,
+    "beta": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      1,
+      0,
+      0
+    ],
+    "value": 6
+  },
+  {
+    "event": "visit",
+    "path": [
+      1,
+      0,
+      1
+    ],
+    "player": "MIN",
+    "alpha": 6,
+    "beta": "+inf"
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      1,
+      0,
+      1
+    ],
+    "value": 9
+  },
+  {
+    "event": "visit",
+    "path": [
+      1,
+      1
+    ],
+    "player": "MAX",
+    "alpha": 5,
+    "beta": 9
+  },
+  {
+    "event": "visit",
+    "path": [
+      1,
+      1,
+      0
+    ],
+    "player": "MIN",
+    "alpha": 5,
+    "beta": 9
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      1,
+      1,
+      0
+    ],
+    "value": 1
+  },
+  {
+    "event": "visit",
+    "path": [
+      1,
+      1,
+      1
+    ],
+    "player": "MIN",
+    "alpha": 5,
+    "beta": 9
+  },
+  {
+    "event": "evaluate",
+    "path": [
+      1,
+      1,
+      1
+    ],
+    "value": 2
+  }
+]

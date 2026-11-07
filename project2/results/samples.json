@@ -1,0 +1,570 @@
+{
+  "answers": {
+    "problem1_path": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "problem1_steps": 7,
+    "problem2_cost": 7,
+    "problem3_value": 5,
+    "problem4": [
+      {
+        "depth": 2,
+        "algorithm": "minimax",
+        "best_target": "T2",
+        "best_value": -1
+      },
+      {
+        "depth": 2,
+        "algorithm": "alpha_beta",
+        "best_target": "T2",
+        "best_value": -1
+      },
+      {
+        "depth": 4,
+        "algorithm": "minimax",
+        "best_target": "T3",
+        "best_value": 3
+      },
+      {
+        "depth": 4,
+        "algorithm": "alpha_beta",
+        "best_target": "T3",
+        "best_value": 3
+      }
+    ]
+  },
+  "problem1": {
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "stats": {
+      "popped": 14,
+      "expanded": 13,
+      "generated": 29,
+      "discovered": 16,
+      "reopened": 0,
+      "stale_pops": 0,
+      "max_frontier": 3,
+      "elapsed_ns": 60042,
+      "preparation_ns": 15500
+    },
+    "accumulation": [
+      {
+        "step": 0,
+        "position": [
+          0,
+          0
+        ],
+        "entering_cost": 0,
+        "cumulative_cost": 0
+      },
+      {
+        "step": 1,
+        "position": [
+          0,
+          1
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 1
+      },
+      {
+        "step": 2,
+        "position": [
+          0,
+          2
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 2
+      },
+      {
+        "step": 3,
+        "position": [
+          1,
+          2
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 3
+      },
+      {
+        "step": 4,
+        "position": [
+          1,
+          3
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 4
+      },
+      {
+        "step": 5,
+        "position": [
+          1,
+          4
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 5
+      },
+      {
+        "step": 6,
+        "position": [
+          2,
+          4
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 6
+      },
+      {
+        "step": 7,
+        "position": [
+          3,
+          4
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 7
+      }
+    ]
+  },
+  "problem2": {
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "stats": {
+      "popped": 11,
+      "expanded": 10,
+      "generated": 31,
+      "discovered": 19,
+      "reopened": 0,
+      "stale_pops": 0,
+      "max_frontier": 9,
+      "elapsed_ns": 38792,
+      "preparation_ns": 5667
+    },
+    "accumulation": [
+      {
+        "step": 0,
+        "position": [
+          0,
+          0
+        ],
+        "entering_cost": 0,
+        "cumulative_cost": 0
+      },
+      {
+        "step": 1,
+        "position": [
+          1,
+          0
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 1
+      },
+      {
+        "step": 2,
+        "position": [
+          2,
+          0
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 2
+      },
+      {
+        "step": 3,
+        "position": [
+          3,
+          0
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 3
+      },
+      {
+        "step": 4,
+        "position": [
+          3,
+          1
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 4
+      },
+      {
+        "step": 5,
+        "position": [
+          3,
+          2
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 5
+      },
+      {
+        "step": 6,
+        "position": [
+          4,
+          2
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 6
+      },
+      {
+        "step": 7,
+        "position": [
+          4,
+          3
+        ],
+        "entering_cost": 1,
+        "cumulative_cost": 7
+      },
+      {
+        "step": 8,
+        "position": [
+          4,
+          4
+        ],
+        "entering_cost": 0,
+        "cumulative_cost": 7
+      }
+    ]
+  },
+  "problem3": {
+    "value": 5,
+    "stats": {
+      "visited": 14,
+      "expanded": 7,
+      "leaves": 7,
+      "cutoffs": 1,
+      "pruned_branches": 1,
+      "cache_hits": 0,
+      "cache_stores": 0,
+      "elapsed_ns": 18208
+    }
+  },
+  "problem4": {
+    "names": [
+      "A",
+      "B",
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "distance_matrix": [
+      [
+        0,
+        12,
+        10,
+        4,
+        8,
+        8
+      ],
+      [
+        12,
+        0,
+        8,
+        8,
+        4,
+        10
+      ],
+      [
+        10,
+        8,
+        0,
+        6,
+        6,
+        12
+      ],
+      [
+        4,
+        8,
+        6,
+        0,
+        6,
+        6
+      ],
+      [
+        8,
+        4,
+        6,
+        6,
+        0,
+        6
+      ],
+      [
+        8,
+        10,
+        12,
+        6,
+        6,
+        0
+      ]
+    ],
+    "exact_root_action_values": {
+      "2": {
+        "T1": -4,
+        "T2": -1,
+        "T3": -2,
+        "T4": -4
+      },
+      "4": {
+        "T1": -5,
+        "T2": 1,
+        "T3": 3,
+        "T4": -7
+      }
+    },
+    "optimal_lines": {
+      "2": [
+        {
+          "ply": 1,
+          "player": "A",
+          "from": "A",
+          "target": "T2",
+          "cost": 4,
+          "gain": 2,
+          "score_a": 2,
+          "score_b": 0,
+          "utility": 2,
+          "remaining": [
+            "T1",
+            "T3",
+            "T4"
+          ]
+        },
+        {
+          "ply": 2,
+          "player": "B",
+          "from": "B",
+          "target": "T3",
+          "cost": 4,
+          "gain": 3,
+          "score_a": 2,
+          "score_b": 3,
+          "utility": -1,
+          "remaining": [
+            "T1",
+            "T4"
+          ]
+        }
+      ],
+      "4": [
+        {
+          "ply": 1,
+          "player": "A",
+          "from": "A",
+          "target": "T3",
+          "cost": 8,
+          "gain": -1,
+          "score_a": -1,
+          "score_b": 0,
+          "utility": -1,
+          "remaining": [
+            "T1",
+            "T2",
+            "T4"
+          ]
+        },
+        {
+          "ply": 2,
+          "player": "B",
+          "from": "B",
+          "target": "T1",
+          "cost": 8,
+          "gain": 1,
+          "score_a": -1,
+          "score_b": 1,
+          "utility": -2,
+          "remaining": [
+            "T2",
+            "T4"
+          ]
+        },
+        {
+          "ply": 3,
+          "player": "A",
+          "from": "T3",
+          "target": "T2",
+          "cost": 6,
+          "gain": 0,
+          "score_a": -1,
+          "score_b": 1,
+          "utility": -2,
+          "remaining": [
+            "T4"
+          ]
+        },
+        {
+          "ply": 4,
+          "player": "B",
+          "from": "T1",
+          "target": "T4",
+          "cost": 12,
+          "gain": -5,
+          "score_a": -1,
+          "score_b": -4,
+          "utility": 3,
+          "remaining": []
+        }
+      ]
+    },
+    "searches": [
+      {
+        "depth": 2,
+        "algorithm": "minimax",
+        "value": -1,
+        "best_target": "T2",
+        "stats": {
+          "visited": 17,
+          "expanded": 5,
+          "leaves": 12,
+          "cutoffs": 0,
+          "pruned_branches": 0,
+          "cache_hits": 0,
+          "cache_stores": 0,
+          "elapsed_ns": 71625
+        }
+      },
+      {
+        "depth": 2,
+        "algorithm": "alpha_beta",
+        "value": -1,
+        "best_target": "T2",
+        "stats": {
+          "visited": 13,
+          "expanded": 5,
+          "leaves": 8,
+          "cutoffs": 2,
+          "pruned_branches": 4,
+          "cache_hits": 0,
+          "cache_stores": 0,
+          "elapsed_ns": 59625
+        }
+      },
+      {
+        "depth": 4,
+        "algorithm": "minimax",
+        "value": 3,
+        "best_target": "T3",
+        "stats": {
+          "visited": 65,
+          "expanded": 41,
+          "leaves": 24,
+          "cutoffs": 0,
+          "pruned_branches": 0,
+          "cache_hits": 0,
+          "cache_stores": 0,
+          "elapsed_ns": 183500
+        }
+      },
+      {
+        "depth": 4,
+        "algorithm": "alpha_beta",
+        "value": 3,
+        "best_target": "T3",
+        "stats": {
+          "visited": 47,
+          "expanded": 31,
+          "leaves": 16,
+          "cutoffs": 5,
+          "pruned_branches": 6,
+          "cache_hits": 0,
+          "cache_stores": 0,
+          "elapsed_ns": 165291
+        }
+      }
+    ]
+  },
+  "all_passed": true
+}
